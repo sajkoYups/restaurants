@@ -1,6 +1,6 @@
 {
   "restaurantName": "The Grand Bistro",
-  "logo": "`${process.env.PUBLIC_URL}/images/restaurant-logo.webp`",
+  "logo": "/images/restaurant-logo.webp",
   "categories": [
     {
       "id": 1,
