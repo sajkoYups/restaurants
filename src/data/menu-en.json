@@ -1,6 +1,6 @@
 {
   "restaurantName": "The Grand Bistro",
-  "logo": "/images/restaurant-logo.webp",
+  "logo": "`${process.env.PUBLIC_URL}/images/restaurant-logo.webp`",
   "categories": [
     {
       "id": 1,
@@ -11,28 +11,28 @@
           "name": "Spring Rolls",
           "description": "Fresh vegetables wrapped in rice paper, served with peanut sauce",
           "price": 6.99,
-          "image": "/images/spring-rolls.jpg"
+          "image": "`${process.env.PUBLIC_URL}/images/spring-rolls.jpg`"
         },
         {
           "id": 102,
           "name": "Garlic Bread",
           "description": "Toasted artisan bread with garlic butter and fresh herbs",
           "price": 4.99,
-          "image": "/images/garlic-bread.jpg"
+          "image": "`${process.env.PUBLIC_URL}/images/garlic-bread.jpg`"
         },
         {
           "id": 103,
           "name": "Bruschetta",
           "description": "Grilled bread rubbed with garlic, topped with diced tomatoes, fresh basil, and olive oil",
           "price": 7.99,
-          "image": "/images/bruschetta.jpg"
+          "image": "${process.env.PUBLIC_URL}/images/bruschetta.jpg"
         },
         {
           "id": 104,
           "name": "Calamari Fritti",
           "description": "Crispy fried squid rings served with marinara sauce and lemon wedges",
           "price": 12.99,
-          "image": "/images/calamari.jpg"
+          "image": "${process.env.PUBLIC_URL}/images/calamari.jpg"
         }
       ]
     },
@@ -45,21 +45,21 @@
           "name": "Caesar Salad",
           "description": "Crisp romaine lettuce, parmesan cheese, croutons, and classic Caesar dressing",
           "price": 10.99,
-          "image": "/images/caesar-salad.jpg"
+          "image": "${process.env.PUBLIC_URL}/images/caesar-salad.jpg"
         },
         {
           "id": 202,
           "name": "French Onion Soup",
           "description": "Rich beef broth with caramelized onions, topped with crusty bread and melted Gruyère",
           "price": 8.99,
-          "image": "/images/onion-soup.jpg"
+          "image": "${process.env.PUBLIC_URL}/images/onion-soup.jpg"
         },
         {
           "id": 203,
           "name": "Mediterranean Salad",
           "description": "Mixed greens, feta cheese, olives, cucumber, tomatoes with balsamic vinaigrette",
           "price": 11.99,
-          "image": "/images/med-salad.jpg"
+          "image": "${process.env.PUBLIC_URL}/images/med-salad.jpg"
         }
       ]
     },
