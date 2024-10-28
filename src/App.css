@@ -40,66 +40,6 @@
   }
 }
 
-.restaurant-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.restaurant-logo {
-  max-height: 150px;
-}
-
-.menu-container {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.menu-category h2 {
-  border-bottom: 2px solid #333;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-.menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.menu-item {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.2s;
-}
-
-.menu-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.item-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.item-details {
-  padding: 15px;
-}
-
-.item-description {
-  color: #666;
-  margin: 10px 0;
-}
-
-.item-price {
-  font-weight: bold;
-  color: #2c5282;
-  font-size: 1.2em;
-}
-
 .language-switcher {
   position: fixed;
   top: 20px;
@@ -123,6 +63,34 @@
 }
 
 .lang-btn.active {
+  background: #2c5282;
+  color: white;
+  border-color: #2c5282;
+}
+
+.design-switcher {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.design-btn {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.design-btn:hover {
+  background: #f0f0f0;
+}
+
+.design-btn.active {
   background: #2c5282;
   color: white;
   border-color: #2c5282;

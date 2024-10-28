@@ -1,0 +1,150 @@
+.design2-container {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 60px; /* Space for language switcher */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background: #2c5282;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-logo {
+  max-width: 120px;
+  margin: 10px auto;
+}
+
+.category-nav {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.category-nav li {
+  margin: 5px 0;
+}
+
+.category-nav button {
+  width: 100%;
+  padding: 12px 15px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 4px;
+}
+
+.category-nav li.active button {
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+}
+
+.category-nav button:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-item-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.menu-item-card:hover {
+  transform: translateY(-5px);
+}
+
+.item-info {
+  padding: 15px;
+}
+
+/* Hamburger Button */
+.hamburger-button {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger-button span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #2c5282;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .design2-container {
+    padding-top: 80px;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Hamburger Animation */
+  .hamburger-button.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger-button.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-button.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+}

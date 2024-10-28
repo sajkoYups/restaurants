@@ -4,6 +4,9 @@ import menuEnglish from "./data/menu-en.json";
 import menuGerman from "./data/menu-de.json";
 import menuFrench from "./data/menu-fr.json";
 import menuSpanish from "./data/menu-es.json";
+import Design1 from "./components/designs/Design1";
+import Design2 from "./components/designs/Design2";
+import Design3 from "./components/designs/Design3";
 
 const menuData = {
   en: menuEnglish,
@@ -19,11 +22,45 @@ const languages = [
   { code: "es", name: "Español" },
 ];
 
+const designs = [
+  { id: 1, name: "Classic" },
+  { id: 2, name: "Minimal" },
+  { id: 3, name: "Elegant" },
+];
+
 function App() {
   const [currentLang, setCurrentLang] = useState("en");
+  const [currentDesign, setCurrentDesign] = useState(1);
+
+  const renderCurrentDesign = () => {
+    switch (currentDesign) {
+      case 1:
+        return <Design1 menuData={menuData} currentLang={currentLang} />;
+      case 2:
+        return <Design2 menuData={menuData} currentLang={currentLang} />;
+      case 3:
+        return <Design3 menuData={menuData} currentLang={currentLang} />;
+      default:
+        return <Design1 menuData={menuData} currentLang={currentLang} />;
+    }
+  };
 
   return (
     <div className="App">
+      <div className="design-switcher">
+        {designs.map((design) => (
+          <button
+            key={design.id}
+            onClick={() => setCurrentDesign(design.id)}
+            className={`design-btn ${
+              currentDesign === design.id ? "active" : ""
+            }`}
+          >
+            {design.name}
+          </button>
+        ))}
+      </div>
+
       <div className="language-switcher">
         {languages.map((lang) => (
           <button
@@ -36,47 +73,7 @@ function App() {
         ))}
       </div>
 
-      <header className="restaurant-header">
-        <h1>{menuData[currentLang].restaurantName}</h1>
-        {menuData[currentLang].logo && (
-          <img
-            src={menuData[currentLang].logo}
-            alt="Restaurant Logo"
-            className="restaurant-logo"
-          />
-        )}
-      </header>
-
-      <div className="menu-container">
-        {menuData[currentLang].categories.map((category) => (
-          <div key={category.id} className="menu-category">
-            <h2>{category.name}</h2>
-            <div className="menu-items">
-              {category.items.map((item) => (
-                <div key={item.id} className="menu-item">
-                  {item.image && (
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="item-image"
-                    />
-                  )}
-                  <div className="item-details">
-                    <h3>{item.name}</h3>
-                    <p className="item-description">{item.description}</p>
-                    <p className="item-price">
-                      {new Intl.NumberFormat("de-DE", {
-                        style: "currency",
-                        currency: "EUR",
-                      }).format(item.price)}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+      {renderCurrentDesign()}
     </div>
   );
 }
