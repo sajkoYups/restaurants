@@ -1,0 +1,175 @@
+{
+  "restaurantName": "El Gran Bistró",
+  "logo": "/restaurant-logo.png",
+  "categories": [
+    {
+      "id": 1,
+      "name": "Entrantes",
+      "items": [
+        {
+          "id": 101,
+          "name": "Rollitos de Primavera",
+          "description": "Verduras frescas envueltas en papel de arroz, servidas con salsa de cacahuete",
+          "price": 6.99,
+          "image": "/images/spring-rolls.jpg"
+        },
+        {
+          "id": 102,
+          "name": "Pan de Ajo",
+          "description": "Pan artesanal tostado con mantequilla de ajo y hierbas frescas",
+          "price": 4.99,
+          "image": "/images/garlic-bread.jpg"
+        },
+        {
+          "id": 103,
+          "name": "Bruschetta",
+          "description": "Pan tostado frotado con ajo, cubierto con tomates picados, albahaca fresca y aceite de oliva",
+          "price": 7.99,
+          "image": "/images/bruschetta.jpg"
+        },
+        {
+          "id": 104,
+          "name": "Calamares Fritos",
+          "description": "Aros de calamar crujientes, servidos con salsa marinara y gajos de limón",
+          "price": 12.99,
+          "image": "/images/calamari.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sopas y Ensaladas",
+      "items": [
+        {
+          "id": 201,
+          "name": "Ensalada César",
+          "description": "Lechuga romana crujiente, queso parmesano, picatostes y aderezo César clásico",
+          "price": 10.99,
+          "image": "/images/caesar-salad.jpg"
+        },
+        {
+          "id": 202,
+          "name": "Sopa de Cebolla Francesa",
+          "description": "Caldo de res rico con cebollas caramelizadas, gratinado con pan y queso gruyère derretido",
+          "price": 8.99,
+          "image": "/images/onion-soup.jpg"
+        },
+        {
+          "id": 203,
+          "name": "Ensalada Mediterránea",
+          "description": "Mezcla de lechugas, queso feta, aceitunas, pepinos, tomates con vinagreta balsámica",
+          "price": 11.99,
+          "image": "/images/med-salad.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Platos Principales",
+      "items": [
+        {
+          "id": 301,
+          "name": "Salmón a la Parrilla",
+          "description": "Salmón fresco del Atlántico con hierbas y limón, servido con verduras asadas",
+          "price": 24.99,
+          "image": "/images/salmon.jpg"
+        },
+        {
+          "id": 302,
+          "name": "Filete Mignon",
+          "description": "Filete de ternera premium de 230g, servido con puré de patatas al ajo y verduras de temporada",
+          "price": 34.99,
+          "image": "/images/filet-mignon.jpg"
+        },
+        {
+          "id": 303,
+          "name": "Pollo al Marsala",
+          "description": "Pechuga de pollo salteada en salsa de vino Marsala con champiñones y pasta",
+          "price": 21.99,
+          "image": "/images/chicken-marsala.jpg"
+        },
+        {
+          "id": 304,
+          "name": "Risotto de Verduras",
+          "description": "Arroz Arborio cremoso con verduras de temporada y queso parmesano",
+          "price": 18.99,
+          "image": "/images/risotto.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pasta",
+      "items": [
+        {
+          "id": 401,
+          "name": "Espaguetis a la Carbonara",
+          "description": "Pasta romana clásica con huevos, queso pecorino, panceta y pimienta negra",
+          "price": 16.99,
+          "image": "/images/carbonara.jpg"
+        },
+        {
+          "id": 402,
+          "name": "Fettuccine Alfredo",
+          "description": "Fettuccine en salsa cremosa rica con queso parmesano",
+          "price": 15.99,
+          "image": "/images/alfredo.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Postres",
+      "items": [
+        {
+          "id": 501,
+          "name": "Tiramisú",
+          "description": "Postre italiano clásico con bizcochos empapados en café y crema de mascarpone",
+          "price": 8.99,
+          "image": "/images/tiramisu.jpg"
+        },
+        {
+          "id": 502,
+          "name": "Pastel de Chocolate Fundido",
+          "description": "Pastel de chocolate caliente con centro líquido, servido con helado de vainilla",
+          "price": 9.99,
+          "image": "/images/lava-cake.jpg"
+        },
+        {
+          "id": 503,
+          "name": "Crema Catalana",
+          "description": "Rica crema de vainilla con costra de azúcar caramelizado",
+          "price": 8.99,
+          "image": "/images/creme-brulee.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Bebidas",
+      "items": [
+        {
+          "id": 601,
+          "name": "Café Artesanal",
+          "description": "Café premium tostado localmente",
+          "price": 3.99,
+          "image": "/images/coffee.jpg"
+        },
+        {
+          "id": 602,
+          "name": "Batido de Frutas Frescas",
+          "description": "Mezcla de frutas de temporada con yogur",
+          "price": 5.99,
+          "image": "/images/smoothie.jpg"
+        },
+        {
+          "id": 603,
+          "name": "Refresco Italiano",
+          "description": "Agua con gas con jarabe a elección",
+          "price": 4.99,
+          "image": "/images/italian-soda.jpg"
+        }
+      ]
+    }
+  ]
+}
