@@ -1,6 +1,6 @@
 {
   "restaurantName": "Le Grand Bistro",
-  "logo": "/restaurant-logo.png",
+  "logo": "images/restaurant-logo.webp",
   "categories": [
     {
       "id": 1,
@@ -11,28 +11,28 @@
           "name": "Rouleaux de Printemps",
           "description": "Légumes frais enveloppés dans du papier de riz, servis avec une sauce aux cacahuètes",
           "price": 6.99,
-          "image": "/images/spring-rolls.jpg"
+          "image": "images/spring-rolls.jpg"
         },
         {
           "id": 102,
           "name": "Pain à l'Ail",
           "description": "Pain artisanal grillé avec beurre à l'ail et herbes fraîches",
           "price": 4.99,
-          "image": "/images/garlic-bread.jpg"
+          "image": "images/garlic-bread.jpg"
         },
         {
           "id": 103,
           "name": "Bruschetta",
           "description": "Pain grillé frotté à l'ail, garni de tomates en dés, basilic frais et huile d'olive",
           "price": 7.99,
-          "image": "/images/bruschetta.jpg"
+          "image": "images/bruschetta.jpg"
         },
         {
           "id": 104,
           "name": "Calamars Frits",
           "description": "Anneaux de calamar croustillants, servis avec sauce marinara et quartiers de citron",
           "price": 12.99,
-          "image": "/images/calamari.jpg"
+          "image": "images/calamari.jpg"
         }
       ]
     },
@@ -45,21 +45,21 @@
           "name": "Salade César",
           "description": "Laitue romaine croquante, parmesan, croûtons et vinaigrette César classique",
           "price": 10.99,
-          "image": "/images/caesar-salad.jpg"
+          "image": "images/caesar-salad.jpg"
         },
         {
           "id": 202,
           "name": "Soupe à l'Oignon Française",
           "description": "Bouillon de bœuf riche avec oignons caramélisés, gratinée au pain et fromage gruyère fondu",
           "price": 8.99,
-          "image": "/images/onion-soup.jpg"
+          "image": "images/onion-soup.jpg"
         },
         {
           "id": 203,
           "name": "Salade Méditerranéenne",
           "description": "Mélange de salades, fromage feta, olives, concombres, tomates avec vinaigrette balsamique",
           "price": 11.99,
-          "image": "/images/med-salad.jpg"
+          "image": "images/med-salad.jpg"
         }
       ]
     },
@@ -72,28 +72,28 @@
           "name": "Saumon Grillé",
           "description": "Saumon frais de l'Atlantique aux herbes et citron, servi avec légumes rôtis",
           "price": 24.99,
-          "image": "/images/salmon.jpg"
+          "image": "images/salmon.jpg"
         },
         {
           "id": 302,
           "name": "Filet Mignon",
           "description": "Filet de bœuf premium de 230g, servi avec purée de pommes de terre à l'ail et légumes de saison",
           "price": 34.99,
-          "image": "/images/filet-mignon.jpg"
+          "image": "images/filet-mignon.jpg"
         },
         {
           "id": 303,
           "name": "Poulet Marsala",
           "description": "Poitrine de poulet sautée dans une sauce au vin Marsala avec champignons et pâtes",
           "price": 21.99,
-          "image": "/images/chicken-marsala.jpg"
+          "image": "images/chicken-marsala.jpg"
         },
         {
           "id": 304,
           "name": "Risotto aux Légumes",
           "description": "Riz Arborio crémeux avec légumes de saison et parmesan",
           "price": 18.99,
-          "image": "/images/risotto.jpg"
+          "image": "images/risotto.jpg"
         }
       ]
     },
@@ -106,14 +106,14 @@
           "name": "Spaghetti Carbonara",
           "description": "Pâtes romaines classiques aux œufs, fromage pecorino, pancetta et poivre noir",
           "price": 16.99,
-          "image": "/images/carbonara.jpg"
+          "image": "images/carbonara.jpg"
         },
         {
           "id": 402,
           "name": "Fettuccine Alfredo",
           "description": "Fettuccine dans une sauce crémeuse riche au parmesan",
           "price": 15.99,
-          "image": "/images/alfredo.jpg"
+          "image": "images/alfredo.jpg"
         }
       ]
     },
@@ -126,21 +126,21 @@
           "name": "Tiramisu",
           "description": "Dessert italien classique aux biscuits imbibés de café et crème de mascarpone",
           "price": 8.99,
-          "image": "/images/tiramisu.jpg"
+          "image": "images/tiramisu.jpg"
         },
         {
           "id": 502,
           "name": "Gâteau Coulant au Chocolat",
           "description": "Gâteau au chocolat chaud avec cœur coulant, servi avec glace à la vanille",
           "price": 9.99,
-          "image": "/images/lava-cake.jpg"
+          "image": "images/lava-cake.jpg"
         },
         {
           "id": 503,
           "name": "Crème Brûlée",
           "description": "Crème à la vanille riche avec croûte de sucre caramélisé",
           "price": 8.99,
-          "image": "/images/creme-brulee.jpg"
+          "image": "images/creme-brulee.jpg"
         }
       ]
     },
@@ -153,21 +153,21 @@
           "name": "Café Artisanal",
           "description": "Café premium torréfié localement",
           "price": 3.99,
-          "image": "/images/coffee.jpg"
+          "image": "images/coffee.jpg"
         },
         {
           "id": 602,
           "name": "Smoothie aux Fruits Frais",
           "description": "Mélange de fruits de saison avec yaourt",
           "price": 5.99,
-          "image": "/images/smoothie.jpg"
+          "image": "images/smoothie.jpg"
         },
         {
           "id": 603,
           "name": "Limonade Italienne",
           "description": "Eau gazeuse avec sirop au choix",
           "price": 4.99,
-          "image": "/images/italian-soda.jpg"
+          "image": "images/italian-soda.jpg"
         }
       ]
     }

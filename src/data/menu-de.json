@@ -1,6 +1,6 @@
 {
   "restaurantName": "Das Grand Bistro",
-  "logo": "/restaurant-logo.png",
+  "logo": "images/restaurant-logo.webp",
   "categories": [
     {
       "id": 1,
@@ -11,28 +11,28 @@
           "name": "Frühlingsrollen",
           "description": "Frisches Gemüse in Reispapier gewickelt, serviert mit Erdnusssauce",
           "price": 6.99,
-          "image": "/images/spring-rolls.jpg"
+          "image": "images/spring-rolls.jpg"
         },
         {
           "id": 102,
           "name": "Knoblauchbrot",
           "description": "Getoastetes Artisanbrot mit Knoblauchbutter und frischen Kräutern",
           "price": 4.99,
-          "image": "/images/garlic-bread.jpg"
+          "image": "images/garlic-bread.jpg"
         },
         {
           "id": 103,
           "name": "Bruschetta",
           "description": "Gegrilltes Brot mit Knoblauch eingerieben, belegt mit gewürfelten Tomaten, frischem Basilikum und Olivenöl",
           "price": 7.99,
-          "image": "/images/bruschetta.jpg"
+          "image": "images/bruschetta.jpg"
         },
         {
           "id": 104,
           "name": "Calamari Fritti",
           "description": "Knusprig frittierte Tintenfischringe, serviert mit Marinara-Sauce und Zitronenspalten",
           "price": 12.99,
-          "image": "/images/calamari.jpg"
+          "image": "images/calamari.jpg"
         }
       ]
     },
@@ -45,21 +45,21 @@
           "name": "Caesar Salat",
           "description": "Knackiger Römersalat, Parmesankäse, Croutons und klassisches Caesar-Dressing",
           "price": 10.99,
-          "image": "/images/caesar-salad.jpg"
+          "image": "images/caesar-salad.jpg"
         },
         {
           "id": 202,
           "name": "Französische Zwiebelsuppe",
           "description": "Kräftige Rinderbrühe mit karamellisierten Zwiebeln, überbacken mit Brot und geschmolzenem Gruyère",
           "price": 8.99,
-          "image": "/images/onion-soup.jpg"
+          "image": "images/onion-soup.jpg"
         },
         {
           "id": 203,
           "name": "Mediterraner Salat",
           "description": "Gemischte Blattsalate, Feta-Käse, Oliven, Gurken, Tomaten mit Balsamico-Vinaigrette",
           "price": 11.99,
-          "image": "/images/med-salad.jpg"
+          "image": "images/med-salad.jpg"
         }
       ]
     },
@@ -72,28 +72,28 @@
           "name": "Gegrillter Lachs",
           "description": "Frischer atlantischer Lachs mit Kräutern und Zitrone, serviert mit geröstetem Gemüse",
           "price": 24.99,
-          "image": "/images/salmon.jpg"
+          "image": "images/salmon.jpg"
         },
         {
           "id": 302,
           "name": "Filet Mignon",
           "description": "230g Premium-Rinderfilet, serviert mit Knoblauch-Kartoffelpüree und Saisongemüse",
           "price": 34.99,
-          "image": "/images/filet-mignon.jpg"
+          "image": "images/filet-mignon.jpg"
         },
         {
           "id": 303,
           "name": "Hähnchen Marsala",
           "description": "Gebratene Hähnchenbrust in Marsala-Weinsauce mit Pilzen und Pasta",
           "price": 21.99,
-          "image": "/images/chicken-marsala.jpg"
+          "image": "images/chicken-marsala.jpg"
         },
         {
           "id": 304,
           "name": "Gemüse-Risotto",
           "description": "Cremiger Arborio-Reis mit Saisongemüse und Parmesankäse",
           "price": 18.99,
-          "image": "/images/risotto.jpg"
+          "image": "images/risotto.jpg"
         }
       ]
     },
@@ -106,14 +106,14 @@
           "name": "Spaghetti Carbonara",
           "description": "Klassische römische Pasta mit Eiern, Pecorino-Käse, Pancetta und schwarzem Pfeffer",
           "price": 16.99,
-          "image": "/images/carbonara.jpg"
+          "image": "images/carbonara.jpg"
         },
         {
           "id": 402,
           "name": "Fettuccine Alfredo",
           "description": "Fettuccine in reichhaltiger Sahnesauce mit Parmesankäse",
           "price": 15.99,
-          "image": "/images/alfredo.jpg"
+          "image": "images/alfredo.jpg"
         }
       ]
     },
@@ -126,21 +126,21 @@
           "name": "Tiramisu",
           "description": "Klassisches italienisches Dessert mit in Kaffee getränkten Löffelbiskuits und Mascarpone-Creme",
           "price": 8.99,
-          "image": "/images/tiramisu.jpg"
+          "image": "images/tiramisu.jpg"
         },
         {
           "id": 502,
           "name": "Schokoladen-Lavakuchen",
           "description": "Warmer Schokoladenkuchen mit flüssigem Kern, serviert mit Vanilleeis",
           "price": 9.99,
-          "image": "/images/lava-cake.jpg"
+          "image": "images/lava-cake.jpg"
         },
         {
           "id": 503,
           "name": "Crème Brûlée",
           "description": "Reichhaltige Vanillecreme mit karamellisierter Zuckerkruste",
           "price": 8.99,
-          "image": "/images/creme-brulee.jpg"
+          "image": "images/creme-brulee.jpg"
         }
       ]
     },
@@ -153,21 +153,21 @@
           "name": "Handwerklich gerösteter Kaffee",
           "description": "Lokal gerösteter Premium-Kaffee",
           "price": 3.99,
-          "image": "/images/coffee.jpg"
+          "image": "images/coffee.jpg"
         },
         {
           "id": 602,
           "name": "Frischer Früchte-Smoothie",
           "description": "Mischung aus Saisonfrüchten mit Joghurt",
           "price": 5.99,
-          "image": "/images/smoothie.jpg"
+          "image": "images/smoothie.jpg"
         },
         {
           "id": 603,
           "name": "Italienische Limonade",
           "description": "Sprudelwasser mit Sirup Ihrer Wahl",
           "price": 4.99,
-          "image": "/images/italian-soda.jpg"
+          "image": "images/italian-soda.jpg"
         }
       ]
     }
