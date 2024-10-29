@@ -1,6 +1,13 @@
 import "../../styles/Design3.css";
 
 function Design3({ menuData, currentLang }) {
+  const getImagePath = (imagePath) => {
+    if (imagePath.startsWith("http")) {
+      return imagePath;
+    }
+    return `${process.env.PUBLIC_URL}/${imagePath}`;
+  };
+
   return (
     <div className="design3-container">
       <header className="elegant-header">
@@ -8,7 +15,7 @@ function Design3({ menuData, currentLang }) {
           <h1>{menuData[currentLang].restaurantName}</h1>
           {menuData[currentLang].logo && (
             <img
-              src={menuData[currentLang].logo}
+              src={getImagePath(menuData[currentLang].logo)}
               alt="Restaurant Logo"
               className="elegant-logo"
             />
@@ -33,7 +40,7 @@ function Design3({ menuData, currentLang }) {
                 <div key={item.id} className="elegant-item">
                   <div className="item-image-container">
                     <img
-                      src={item.image}
+                      src={getImagePath(item.image)}
                       alt={item.name}
                       className="elegant-item-image"
                     />

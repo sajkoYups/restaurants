@@ -1,13 +1,20 @@
 import "../../styles/Design1.css";
 
 function Design1({ menuData, currentLang }) {
+  const getImagePath = (imagePath) => {
+    if (imagePath.startsWith("http")) {
+      return imagePath;
+    }
+    return `${process.env.PUBLIC_URL}/${imagePath}`;
+  };
+
   return (
     <>
       <header className="restaurant-header">
         <h1>{menuData[currentLang].restaurantName}</h1>
         {menuData[currentLang].logo && (
           <img
-            src={menuData[currentLang].logo}
+            src={getImagePath(menuData[currentLang].logo)}
             alt="Restaurant Logo"
             className="restaurant-logo"
           />
@@ -23,7 +30,7 @@ function Design1({ menuData, currentLang }) {
                 <div key={item.id} className="menu-item">
                   {item.image && (
                     <img
-                      src={item.image}
+                      src={getImagePath(item.image)}
                       alt={item.name}
                       className="item-image"
                     />

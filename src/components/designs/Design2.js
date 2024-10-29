@@ -5,6 +5,13 @@ function Design2({ menuData, currentLang }) {
   const [activeCategory, setActiveCategory] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const getImagePath = (imagePath) => {
+    if (imagePath.startsWith("http")) {
+      return imagePath;
+    }
+    return `${process.env.PUBLIC_URL}/${imagePath}`;
+  };
+
   // Set initial active category
   useEffect(() => {
     if (menuData[currentLang].categories.length > 0) {
@@ -30,7 +37,7 @@ function Design2({ menuData, currentLang }) {
           <h1>{menuData[currentLang].restaurantName}</h1>
           {menuData[currentLang].logo && (
             <img
-              src={menuData[currentLang].logo}
+              src={getImagePath(menuData[currentLang].logo)}
               alt="Restaurant Logo"
               className="sidebar-logo"
             />
@@ -67,7 +74,7 @@ function Design2({ menuData, currentLang }) {
                 {category.items.map((item) => (
                   <div key={item.id} className="menu-item-card">
                     <img
-                      src={item.image}
+                      src={getImagePath(item.image)}
                       alt={item.name}
                       className="item-image"
                     />
