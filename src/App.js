@@ -7,6 +7,7 @@ import menuSpanish from "./data/menu-es.json";
 import Design1 from "./components/designs/Design1";
 import Design2 from "./components/designs/Design2";
 import Design3 from "./components/designs/Design3";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 const menuData = {
   en: menuEnglish,
@@ -14,13 +15,6 @@ const menuData = {
   fr: menuFrench,
   es: menuSpanish,
 };
-
-const languages = [
-  { code: "en", name: "English" },
-  { code: "de", name: "Deutsch" },
-  { code: "fr", name: "Français" },
-  { code: "es", name: "Español" },
-];
 
 const designs = [
   { id: 1, name: "Classic" },
@@ -61,17 +55,10 @@ function App() {
         ))}
       </div>
 
-      <div className="language-switcher">
-        {languages.map((lang) => (
-          <button
-            key={lang.code}
-            onClick={() => setCurrentLang(lang.code)}
-            className={`lang-btn ${currentLang === lang.code ? "active" : ""}`}
-          >
-            {lang.name}
-          </button>
-        ))}
-      </div>
+      <LanguageSwitcher
+        currentLang={currentLang}
+        setCurrentLang={setCurrentLang}
+      />
 
       {renderCurrentDesign()}
     </div>

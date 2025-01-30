@@ -10,29 +10,87 @@
           "id": 101,
           "name": "Frühlingsrollen",
           "description": "Frisches Gemüse in Reispapier gewickelt, serviert mit Erdnusssauce",
+          "detailedDescription": "Unsere Frühlingsrollen werden täglich frisch mit einer bunten Mischung aus knackigem Gemüse zubereitet. Jede Rolle wird sorgfältig in zartes Reispapier gewickelt und mit unserer hausgemachten Erdnusssauce serviert.",
           "price": 6.99,
-          "image": "images/spring-rolls.jpg"
+          "image": "images/spring-rolls.jpg",
+          "calories": 120,
+          "protein": 3,
+          "carbs": 16,
+          "fat": 5,
+          "allergens": ["Erdnüsse", "Soja"],
+          "ingredients": [
+            "Reispapier",
+            "Salat",
+            "Karotten",
+            "Gurke",
+            "Reisnudeln",
+            "Minze",
+            "Koriander",
+            "Erdnusssauce"
+          ]
         },
         {
           "id": 102,
           "name": "Knoblauchbrot",
           "description": "Getoastetes Artisanbrot mit Knoblauchbutter und frischen Kräutern",
+          "detailedDescription": "Frisch gebackenes Artisanbrot, bestrichen mit unserer hausgemachten Knoblauchbutter und garniert mit frischer Petersilie. Goldbraun getoastet mit knuspriger Kruste und weichem Inneren.",
           "price": 4.99,
-          "image": "images/garlic-bread.jpg"
+          "image": "images/garlic-bread.jpg",
+          "calories": 180,
+          "protein": 4,
+          "carbs": 24,
+          "fat": 8,
+          "allergens": ["Gluten", "Milch"],
+          "ingredients": [
+            "Artisanbrot",
+            "Butter",
+            "Knoblauch",
+            "Petersilie",
+            "Meersalz"
+          ]
         },
         {
           "id": 103,
           "name": "Bruschetta",
-          "description": "Gegrilltes Brot mit Knoblauch eingerieben, belegt mit gewürfelten Tomaten, frischem Basilikum und Olivenöl",
+          "description": "Gegrilltes Brot mit Knoblauch, gewürfelte Tomaten, frischem Basilikum und Olivenöl",
+          "detailedDescription": "Traditionelle italienische Vorspeise mit getoastetem Artisanbrot, eingerieben mit frischem Knoblauch und belegt mit einer lebhaften Mischung aus reifen Tomaten, duftendem Basilikum und hochwertigem Olivenöl.",
           "price": 7.99,
-          "image": "images/bruschetta.jpg"
+          "image": "images/bruschetta.jpg",
+          "calories": 145,
+          "protein": 3,
+          "carbs": 18,
+          "fat": 7,
+          "allergens": ["Gluten"],
+          "ingredients": [
+            "Artisanbrot",
+            "Tomaten",
+            "Knoblauch",
+            "Basilikum",
+            "Olivenöl",
+            "Balsamico-Glaze",
+            "Meersalz"
+          ]
         },
         {
           "id": 104,
           "name": "Calamari Fritti",
-          "description": "Knusprig frittierte Tintenfischringe, serviert mit Marinara-Sauce und Zitronenspalten",
+          "description": "Knusprig frittierte Tintenfischringe mit Marinara-Sauce und Zitronenspalten",
+          "detailedDescription": "Zarte Tintenfischringe in unserem gewürzten Mehl gewendet und goldbraun frittiert. Serviert mit hausgemachter Marinara-Sauce und frischen Zitronenspalten.",
           "price": 12.99,
-          "image": "images/calamari.jpg"
+          "image": "images/calamari.jpg",
+          "calories": 280,
+          "protein": 16,
+          "carbs": 26,
+          "fat": 14,
+          "allergens": ["Gluten", "Meeresfrüchte"],
+          "ingredients": [
+            "Tintenfisch",
+            "Mehl",
+            "Gewürze",
+            "Marinara-Sauce",
+            "Zitrone",
+            "Petersilie"
+          ]
         }
       ]
     },
@@ -43,23 +101,66 @@
         {
           "id": 201,
           "name": "Caesar Salat",
-          "description": "Knackiger Römersalat, Parmesankäse, Croutons und klassisches Caesar-Dressing",
+          "description": "Knackiger Römersalat, Parmesan, Croutons und klassisches Caesar-Dressing",
+          "detailedDescription": "Ein zeitloser Salat mit frischem, knackigem Römersalat in unserem cremigen hausgemachten Caesar-Dressing. Garniert mit gereiftem Parmesan und knoblauchgewürzten Croutons.",
           "price": 10.99,
-          "image": "images/caesar-salad.jpg"
+          "image": "images/caesar-salad.jpg",
+          "calories": 320,
+          "protein": 10,
+          "carbs": 12,
+          "fat": 28,
+          "allergens": ["Milch", "Gluten", "Eier"],
+          "ingredients": [
+            "Römersalat",
+            "Parmesan",
+            "Croutons",
+            "Caesar-Dressing",
+            "Schwarzer Pfeffer"
+          ]
         },
         {
           "id": 202,
           "name": "Französische Zwiebelsuppe",
-          "description": "Kräftige Rinderbrühe mit karamellisierten Zwiebeln, überbacken mit Brot und geschmolzenem Gruyère",
+          "description": "Kräftige Rinderbrühe mit karamellisierten Zwiebeln, überbacken mit Brot und Gruyère",
+          "detailedDescription": "Unsere Spezialität mit langsam karamellisierten Zwiebeln in kräftiger Rinderbrühe, verfeinert mit einem Hauch Cognac. Überbacken mit geröstetem Brot und schmelzendem Gruyère-Käse.",
           "price": 8.99,
-          "image": "images/onion-soup.jpg"
+          "image": "images/onion-soup.jpg",
+          "calories": 340,
+          "protein": 12,
+          "carbs": 28,
+          "fat": 18,
+          "allergens": ["Milch", "Gluten"],
+          "ingredients": [
+            "Zwiebeln",
+            "Rinderbrühe",
+            "Gruyère",
+            "Brot",
+            "Cognac",
+            "Thymian",
+            "Lorbeerblätter"
+          ]
         },
         {
           "id": 203,
           "name": "Mediterraner Salat",
-          "description": "Gemischte Blattsalate, Feta-Käse, Oliven, Gurken, Tomaten mit Balsamico-Vinaigrette",
+          "description": "Gemischte Blattsalate, Feta, Oliven, Gurken, Tomaten mit Balsamico-Vinaigrette",
+          "detailedDescription": "Eine erfrischende Mischung aus knackigen Blattsalaten, cremigem Feta, Kalamata-Oliven und Gartengemüse, verfeinert mit unserer hausgemachten Balsamico-Vinaigrette.",
           "price": 11.99,
-          "image": "images/med-salad.jpg"
+          "image": "images/med-salad.jpg",
+          "calories": 280,
+          "protein": 8,
+          "carbs": 14,
+          "fat": 22,
+          "allergens": ["Milch"],
+          "ingredients": [
+            "Blattsalate",
+            "Feta",
+            "Kalamata-Oliven",
+            "Gurke",
+            "Tomaten",
+            "Rote Zwiebeln",
+            "Balsamico-Vinaigrette"
+          ]
         }
       ]
     },
@@ -70,30 +171,88 @@
         {
           "id": 301,
           "name": "Gegrillter Lachs",
-          "description": "Frischer atlantischer Lachs mit Kräutern und Zitrone, serviert mit geröstetem Gemüse",
+          "description": "Frischer Atlantik-Lachs mit Kräutern und Zitrone, serviert mit geröstetem Gemüse",
+          "detailedDescription": "Hochwertiges Atlantik-Lachsfilet perfekt gegrillt und mit frischen Kräutern und Zitrone gewürzt. Begleitet von einer Auswahl saisonalen gerösteten Gemüses.",
           "price": 24.99,
-          "image": "images/salmon.jpg"
+          "image": "images/salmon.jpg",
+          "calories": 460,
+          "protein": 42,
+          "carbs": 12,
+          "fat": 28,
+          "allergens": ["Fisch"],
+          "ingredients": [
+            "Atlantik-Lachs",
+            "Saisongemüse",
+            "Kräuter",
+            "Zitrone",
+            "Olivenöl",
+            "Knoblauch"
+          ]
         },
         {
           "id": 302,
           "name": "Filet Mignon",
           "description": "230g Premium-Rinderfilet, serviert mit Knoblauch-Kartoffelpüree und Saisongemüse",
+          "detailedDescription": "Handgeschnittenes Premium-Rinderfilet nach Wunsch gegrillt, mit Kräuterbutter. Serviert mit cremigem Knoblauch-Kartoffelpüree und perfekt gewürztem Saisongemüse.",
           "price": 34.99,
-          "image": "images/filet-mignon.jpg"
+          "image": "images/filet-mignon.jpg",
+          "calories": 580,
+          "protein": 48,
+          "carbs": 30,
+          "fat": 32,
+          "allergens": ["Milch"],
+          "ingredients": [
+            "Rinderfilet",
+            "Kartoffeln",
+            "Butter",
+            "Knoblauch",
+            "Saisongemüse",
+            "Frische Kräuter"
+          ]
         },
         {
           "id": 303,
           "name": "Hähnchen Marsala",
           "description": "Gebratene Hähnchenbrust in Marsala-Weinsauce mit Pilzen und Pasta",
+          "detailedDescription": "Zarte Hähnchenbrust gebraten und in reichhaltiger Marsala-Weinsauce mit sautierten Pilzen. Serviert über al dente Pasta mit frischen Kräutern und Parmesan.",
           "price": 21.99,
-          "image": "images/chicken-marsala.jpg"
+          "image": "images/chicken-marsala.jpg",
+          "calories": 520,
+          "protein": 38,
+          "carbs": 42,
+          "fat": 24,
+          "allergens": ["Gluten", "Milch"],
+          "ingredients": [
+            "Hähnchenbrust",
+            "Marsala-Wein",
+            "Pilze",
+            "Pasta",
+            "Butter",
+            "Knoblauch",
+            "Frische Kräuter"
+          ]
         },
         {
           "id": 304,
           "name": "Gemüse-Risotto",
-          "description": "Cremiger Arborio-Reis mit Saisongemüse und Parmesankäse",
+          "description": "Cremiger Arborio-Reis mit Saisongemüse und Parmesan",
+          "detailedDescription": "Langsam gekochter Arborio-Reis in Gemüsebrühe, verfeinert mit Weißwein und Parmesan. Garniert mit Saisongemüse und frischen Kräutern.",
           "price": 18.99,
-          "image": "images/risotto.jpg"
+          "image": "images/risotto.jpg",
+          "calories": 420,
+          "protein": 12,
+          "carbs": 68,
+          "fat": 16,
+          "allergens": ["Milch"],
+          "ingredients": [
+            "Arborio-Reis",
+            "Saisongemüse",
+            "Parmesan",
+            "Weißwein",
+            "Gemüsebrühe",
+            "Butter",
+            "Knoblauch"
+          ]
         }
       ]
     },
@@ -104,16 +263,44 @@
         {
           "id": 401,
           "name": "Spaghetti Carbonara",
-          "description": "Klassische römische Pasta mit Eiern, Pecorino-Käse, Pancetta und schwarzem Pfeffer",
+          "description": "Klassische römische Pasta mit Eiern, Pecorino, Pancetta und schwarzem Pfeffer",
+          "detailedDescription": "Traditionelles römisches Pastagericht aus perfekt gekochten Spaghetti, geschwenkt in einer seidigen Sauce aus frischen Eiern, gereiftem Pecorino und knusprigem Pancetta.",
           "price": 16.99,
-          "image": "images/carbonara.jpg"
+          "image": "images/carbonara.jpg",
+          "calories": 560,
+          "protein": 24,
+          "carbs": 64,
+          "fat": 28,
+          "allergens": ["Gluten", "Milch", "Eier"],
+          "ingredients": [
+            "Spaghetti",
+            "Eier",
+            "Pecorino",
+            "Pancetta",
+            "Schwarzer Pfeffer",
+            "Olivenöl"
+          ]
         },
         {
           "id": 402,
           "name": "Fettuccine Alfredo",
-          "description": "Fettuccine in reichhaltiger Sahnesauce mit Parmesankäse",
+          "description": "Fettuccine in reichhaltiger Sahnesauce mit Parmesan",
+          "detailedDescription": "Hausgemachte Fettuccine in unserer Signature-Alfredo-Sauce aus Sahne, Butter und gereiftem Parmesan. Ein klassisches Komfortgericht mit hochwertigen Zutaten.",
           "price": 15.99,
-          "image": "images/alfredo.jpg"
+          "image": "images/alfredo.jpg",
+          "calories": 620,
+          "protein": 22,
+          "carbs": 68,
+          "fat": 32,
+          "allergens": ["Gluten", "Milch"],
+          "ingredients": [
+            "Fettuccine",
+            "Sahne",
+            "Parmesan",
+            "Butter",
+            "Knoblauch",
+            "Schwarzer Pfeffer"
+          ]
         }
       ]
     },
@@ -124,23 +311,64 @@
         {
           "id": 501,
           "name": "Tiramisu",
-          "description": "Klassisches italienisches Dessert mit in Kaffee getränkten Löffelbiskuits und Mascarpone-Creme",
+          "description": "Klassisches italienisches Dessert mit kaffeegetränkten Löffelbiskuits und Mascarpone-Creme",
+          "detailedDescription": "Schichten aus kaffeegetränkten Löffelbiskuits und cremiger Mascarpone-Füllung, bestäubt mit Premium-Kakaopulver. Unser traditionelles Rezept bringt den authentischen Geschmack Italiens auf Ihren Tisch.",
           "price": 8.99,
-          "image": "images/tiramisu.jpg"
+          "image": "images/tiramisu.jpg",
+          "calories": 380,
+          "protein": 6,
+          "carbs": 42,
+          "fat": 22,
+          "allergens": ["Milch", "Eier", "Gluten"],
+          "ingredients": [
+            "Löffelbiskuits",
+            "Mascarpone",
+            "Kaffee",
+            "Eier",
+            "Kakaopulver",
+            "Zucker"
+          ]
         },
         {
           "id": 502,
           "name": "Schokoladen-Lavakuchen",
           "description": "Warmer Schokoladenkuchen mit flüssigem Kern, serviert mit Vanilleeis",
+          "detailedDescription": "Dekadenter Schokoladenkuchen mit einem reichhaltigen, fließenden Schokoladenkern, warm serviert mit Premium-Vanilleeis und einer leichten Puderzucker-Bestäubung.",
           "price": 9.99,
-          "image": "images/lava-cake.jpg"
+          "image": "images/lava-cake.jpg",
+          "calories": 460,
+          "protein": 8,
+          "carbs": 48,
+          "fat": 28,
+          "allergens": ["Milch", "Eier", "Gluten"],
+          "ingredients": [
+            "Zartbitterschokolade",
+            "Butter",
+            "Eier",
+            "Mehl",
+            "Zucker",
+            "Vanilleeis"
+          ]
         },
         {
           "id": 503,
           "name": "Crème Brûlée",
           "description": "Reichhaltige Vanillecreme mit karamellisierter Zuckerkruste",
+          "detailedDescription": "Seidig glatte Vanillecreme mit einer Schicht karamellisierten Zuckers, die bei jedem Löffel perfekt knackt. Serviert mit frischen Saisonbeeren.",
           "price": 8.99,
-          "image": "images/creme-brulee.jpg"
+          "image": "images/creme-brulee.jpg",
+          "calories": 320,
+          "protein": 4,
+          "carbs": 32,
+          "fat": 20,
+          "allergens": ["Milch", "Eier"],
+          "ingredients": [
+            "Sahne",
+            "Vanilleschote",
+            "Eier",
+            "Zucker",
+            "Frische Beeren"
+          ]
         }
       ]
     },
@@ -150,24 +378,50 @@
       "items": [
         {
           "id": 601,
-          "name": "Handwerklich gerösteter Kaffee",
+          "name": "Craft Kaffee",
           "description": "Lokal gerösteter Premium-Kaffee",
+          "detailedDescription": "Premium-Kaffee aus lokal gerösteten Single-Origin-Bohnen. Erhältlich als Espresso, Americano, Cappuccino oder Latte. Serviert mit hausgemachtem Biscotti.",
           "price": 3.99,
-          "image": "images/coffee.jpg"
+          "image": "images/coffee.jpg",
+          "calories": 5,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "allergens": [],
+          "ingredients": ["Kaffeebohnen", "Gefiltertes Wasser"]
         },
         {
           "id": 602,
-          "name": "Frischer Früchte-Smoothie",
+          "name": "Frischer Fruchtsmoothie",
           "description": "Mischung aus Saisonfrüchten mit Joghurt",
+          "detailedDescription": "Erfrischender Smoothie aus einer Mischung saisonaler Früchte und cremigem Joghurt. Wählen Sie zwischen Beerentraum, Tropical Paradise oder Green Energy.",
           "price": 5.99,
-          "image": "images/smoothie.jpg"
+          "image": "images/smoothie.jpg",
+          "calories": 180,
+          "protein": 4,
+          "carbs": 36,
+          "fat": 2,
+          "allergens": ["Milch"],
+          "ingredients": ["Saisonale Früchte", "Joghurt", "Honig", "Eis"]
         },
         {
           "id": 603,
           "name": "Italienische Limonade",
-          "description": "Sprudelwasser mit Sirup Ihrer Wahl",
+          "description": "Sprudelwasser mit Ihrer Wahl an Geschmackssirup",
+          "detailedDescription": "Erfrischende Kombination aus Sprudelwasser und Premium-Geschmackssirupen. Wählen Sie zwischen Himbeere, Vanille, Haselnuss oder Maracuja. Garniert mit einem Hauch Sahne und frischer Minze.",
           "price": 4.99,
-          "image": "images/italian-soda.jpg"
+          "image": "images/italian-soda.jpg",
+          "calories": 120,
+          "protein": 0,
+          "carbs": 30,
+          "fat": 0,
+          "allergens": [],
+          "ingredients": [
+            "Sprudelwasser",
+            "Geschmackssirup",
+            "Optional: Sahne",
+            "Minze"
+          ]
         }
       ]
     }

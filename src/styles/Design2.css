@@ -78,16 +78,72 @@
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
 }
 
 .menu-item-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-card:active {
+  transform: translateY(0);
+}
+
+.menu-item-card::after {
+  content: "👆 Click for details";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  color: #666;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.menu-item-card:hover::after {
+  opacity: 0.7;
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .item-info {
   padding: 15px;
+}
+
+.item-info h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.item-description {
+  color: #666;
+  margin: 0 0 15px 0;
+  line-height: 1.4;
+}
+
+.item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.item-price {
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.item-allergens {
+  margin-left: auto;
 }
 
 /* Hamburger Button */
@@ -133,6 +189,29 @@
 
   .main-content {
     margin-left: 0;
+    padding: 15px;
+  }
+
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .menu-item-card {
+    max-width: 100%;
+  }
+
+  .item-image {
+    height: 180px;
+  }
+
+  .item-info {
+    padding: 12px;
+  }
+
+  .item-info h3 {
+    font-size: 1.1em;
   }
 
   /* Hamburger Animation */

@@ -10,29 +10,87 @@
           "id": 101,
           "name": "Spring Rolls",
           "description": "Fresh vegetables wrapped in rice paper, served with peanut sauce",
+          "detailedDescription": "Our spring rolls are made fresh daily with a colorful mix of crisp vegetables. Each roll is carefully hand-wrapped in delicate rice paper and served with our house-made peanut sauce that adds the perfect balance of sweet and savory flavors.",
           "price": 6.99,
-          "image": "images/spring-rolls.jpg"
+          "image": "images/spring-rolls.jpg",
+          "calories": 120,
+          "protein": 3,
+          "carbs": 16,
+          "fat": 5,
+          "allergens": ["Peanuts", "Soy"],
+          "ingredients": [
+            "Rice Paper",
+            "Lettuce",
+            "Carrots",
+            "Cucumber",
+            "Rice Noodles",
+            "Mint",
+            "Cilantro",
+            "Peanut Sauce"
+          ]
         },
         {
           "id": 102,
           "name": "Garlic Bread",
           "description": "Toasted artisan bread with garlic butter and fresh herbs",
+          "detailedDescription": "Freshly baked artisan bread, slathered with our signature garlic butter blend and topped with fresh parsley. Toasted to golden perfection with a crispy exterior and soft, buttery interior.",
           "price": 4.99,
-          "image": "images/garlic-bread.jpg"
+          "image": "images/garlic-bread.jpg",
+          "calories": 180,
+          "protein": 4,
+          "carbs": 24,
+          "fat": 8,
+          "allergens": ["Gluten", "Dairy"],
+          "ingredients": [
+            "Artisan Bread",
+            "Butter",
+            "Garlic",
+            "Parsley",
+            "Sea Salt"
+          ]
         },
         {
           "id": 103,
           "name": "Bruschetta",
           "description": "Grilled bread rubbed with garlic, topped with diced tomatoes, fresh basil, and olive oil",
+          "detailedDescription": "Traditional Italian appetizer featuring toasted artisan bread rubbed with fresh garlic and topped with a vibrant mixture of ripe tomatoes, fragrant basil, and premium extra virgin olive oil.",
           "price": 7.99,
-          "image": "images/bruschetta.jpg"
+          "image": "images/bruschetta.jpg",
+          "calories": 145,
+          "protein": 3,
+          "carbs": 18,
+          "fat": 7,
+          "allergens": ["Gluten"],
+          "ingredients": [
+            "Artisan Bread",
+            "Tomatoes",
+            "Garlic",
+            "Basil",
+            "Olive Oil",
+            "Balsamic Glaze",
+            "Sea Salt"
+          ]
         },
         {
           "id": 104,
           "name": "Calamari Fritti",
           "description": "Crispy fried squid rings served with marinara sauce and lemon wedges",
+          "detailedDescription": "Tender squid rings lightly coated in our seasoned flour blend and fried until golden. Served with house-made marinara sauce and fresh lemon wedges for the perfect combination of crispy and zesty flavors.",
           "price": 12.99,
-          "image": "images/calamari.jpg"
+          "image": "images/calamari.jpg",
+          "calories": 280,
+          "protein": 16,
+          "carbs": 26,
+          "fat": 14,
+          "allergens": ["Gluten", "Shellfish"],
+          "ingredients": [
+            "Squid",
+            "Flour",
+            "Seasonings",
+            "Marinara Sauce",
+            "Lemon",
+            "Parsley"
+          ]
         }
       ]
     },
@@ -44,22 +102,65 @@
           "id": 201,
           "name": "Caesar Salad",
           "description": "Crisp romaine lettuce, parmesan cheese, croutons, and classic Caesar dressing",
+          "detailedDescription": "A timeless salad featuring fresh, crisp romaine lettuce tossed in our creamy house-made Caesar dressing. Topped with aged parmesan cheese and garlic-seasoned croutons for the perfect crunch.",
           "price": 10.99,
-          "image": "images/caesar-salad.jpg"
+          "image": "images/caesar-salad.jpg",
+          "calories": 320,
+          "protein": 10,
+          "carbs": 12,
+          "fat": 28,
+          "allergens": ["Dairy", "Gluten", "Eggs"],
+          "ingredients": [
+            "Romaine Lettuce",
+            "Parmesan Cheese",
+            "Croutons",
+            "Caesar Dressing",
+            "Black Pepper"
+          ]
         },
         {
           "id": 202,
           "name": "French Onion Soup",
           "description": "Rich beef broth with caramelized onions, topped with crusty bread and melted Gruyère",
+          "detailedDescription": "Our signature soup features slowly caramelized onions in a rich beef broth enhanced with a touch of cognac. Topped with toasted bread and bubbling Gruyère cheese for a comforting classic.",
           "price": 8.99,
-          "image": "images/onion-soup.jpg"
+          "image": "images/onion-soup.jpg",
+          "calories": 340,
+          "protein": 12,
+          "carbs": 28,
+          "fat": 18,
+          "allergens": ["Dairy", "Gluten"],
+          "ingredients": [
+            "Onions",
+            "Beef Broth",
+            "Gruyère Cheese",
+            "Bread",
+            "Cognac",
+            "Thyme",
+            "Bay Leaves"
+          ]
         },
         {
           "id": 203,
           "name": "Mediterranean Salad",
           "description": "Mixed greens, feta cheese, olives, cucumber, tomatoes with balsamic vinaigrette",
+          "detailedDescription": "A refreshing blend of crisp mixed greens, creamy feta cheese, Kalamata olives, and garden-fresh vegetables, dressed in our house-made balsamic vinaigrette with Mediterranean herbs.",
           "price": 11.99,
-          "image": "images/med-salad.jpg"
+          "image": "images/med-salad.jpg",
+          "calories": 280,
+          "protein": 8,
+          "carbs": 14,
+          "fat": 22,
+          "allergens": ["Dairy"],
+          "ingredients": [
+            "Mixed Greens",
+            "Feta Cheese",
+            "Kalamata Olives",
+            "Cucumber",
+            "Tomatoes",
+            "Red Onion",
+            "Balsamic Vinaigrette"
+          ]
         }
       ]
     },
@@ -71,29 +172,87 @@
           "id": 301,
           "name": "Grilled Salmon",
           "description": "Fresh Atlantic salmon with herbs and lemon, served with roasted vegetables",
+          "detailedDescription": "Premium Atlantic salmon fillet grilled to perfection and seasoned with fresh herbs and lemon. Accompanied by a medley of seasonal roasted vegetables and our signature herb-infused oil.",
           "price": 24.99,
-          "image": "images/salmon.jpg"
+          "image": "images/salmon.jpg",
+          "calories": 460,
+          "protein": 42,
+          "carbs": 12,
+          "fat": 28,
+          "allergens": ["Fish"],
+          "ingredients": [
+            "Atlantic Salmon",
+            "Seasonal Vegetables",
+            "Herbs",
+            "Lemon",
+            "Olive Oil",
+            "Garlic"
+          ]
         },
         {
           "id": 302,
           "name": "Filet Mignon",
           "description": "8oz premium beef tenderloin, served with garlic mashed potatoes and seasonal vegetables",
+          "detailedDescription": "Hand-cut premium beef tenderloin grilled to your preference, topped with herb butter. Served alongside creamy garlic mashed potatoes and perfectly seasoned seasonal vegetables.",
           "price": 34.99,
-          "image": "images/filet-mignon.jpg"
+          "image": "images/filet-mignon.jpg",
+          "calories": 580,
+          "protein": 48,
+          "carbs": 30,
+          "fat": 32,
+          "allergens": ["Dairy"],
+          "ingredients": [
+            "Beef Tenderloin",
+            "Potatoes",
+            "Butter",
+            "Garlic",
+            "Seasonal Vegetables",
+            "Fresh Herbs"
+          ]
         },
         {
           "id": 303,
           "name": "Chicken Marsala",
           "description": "Pan-seared chicken breast in Marsala wine sauce with mushrooms and pasta",
+          "detailedDescription": "Tender chicken breast pan-seared and smothered in a rich Marsala wine sauce with sautéed mushrooms. Served over al dente pasta with fresh herbs and parmesan.",
           "price": 21.99,
-          "image": "images/chicken-marsala.jpg"
+          "image": "images/chicken-marsala.jpg",
+          "calories": 520,
+          "protein": 38,
+          "carbs": 42,
+          "fat": 24,
+          "allergens": ["Gluten", "Dairy"],
+          "ingredients": [
+            "Chicken Breast",
+            "Marsala Wine",
+            "Mushrooms",
+            "Pasta",
+            "Butter",
+            "Garlic",
+            "Fresh Herbs"
+          ]
         },
         {
           "id": 304,
           "name": "Vegetable Risotto",
           "description": "Creamy Arborio rice with seasonal vegetables and parmesan cheese",
+          "detailedDescription": "Slowly cooked Arborio rice in vegetable broth, finished with white wine and parmesan cheese. Studded with seasonal vegetables and fresh herbs for a luxurious vegetarian main course.",
           "price": 18.99,
-          "image": "images/risotto.jpg"
+          "image": "images/risotto.jpg",
+          "calories": 420,
+          "protein": 12,
+          "carbs": 68,
+          "fat": 16,
+          "allergens": ["Dairy"],
+          "ingredients": [
+            "Arborio Rice",
+            "Seasonal Vegetables",
+            "Parmesan",
+            "White Wine",
+            "Vegetable Broth",
+            "Butter",
+            "Garlic"
+          ]
         }
       ]
     },
@@ -105,15 +264,43 @@
           "id": 401,
           "name": "Spaghetti Carbonara",
           "description": "Classic Roman pasta with eggs, pecorino cheese, pancetta, and black pepper",
+          "detailedDescription": "Traditional Roman pasta dish made with perfectly cooked spaghetti, tossed with a silky sauce of farm-fresh eggs, aged pecorino cheese, and crispy pancetta. Finished with freshly ground black pepper.",
           "price": 16.99,
-          "image": "images/carbonara.jpg"
+          "image": "images/carbonara.jpg",
+          "calories": 560,
+          "protein": 24,
+          "carbs": 64,
+          "fat": 28,
+          "allergens": ["Gluten", "Dairy", "Eggs"],
+          "ingredients": [
+            "Spaghetti",
+            "Eggs",
+            "Pecorino Cheese",
+            "Pancetta",
+            "Black Pepper",
+            "Olive Oil"
+          ]
         },
         {
           "id": 402,
           "name": "Fettuccine Alfredo",
           "description": "Fettuccine pasta in rich cream sauce with parmesan cheese",
+          "detailedDescription": "Homemade fettuccine pasta tossed in our signature Alfredo sauce made with heavy cream, butter, and aged parmesan cheese. A classic comfort dish elevated with quality ingredients.",
           "price": 15.99,
-          "image": "images/alfredo.jpg"
+          "image": "images/alfredo.jpg",
+          "calories": 620,
+          "protein": 22,
+          "carbs": 68,
+          "fat": 32,
+          "allergens": ["Gluten", "Dairy"],
+          "ingredients": [
+            "Fettuccine",
+            "Heavy Cream",
+            "Parmesan Cheese",
+            "Butter",
+            "Garlic",
+            "Black Pepper"
+          ]
         }
       ]
     },
@@ -125,22 +312,63 @@
           "id": 501,
           "name": "Tiramisu",
           "description": "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cream",
+          "detailedDescription": "Layers of coffee-soaked ladyfingers and creamy mascarpone filling, dusted with premium cocoa powder. Our traditional recipe brings the authentic taste of Italy to your table.",
           "price": 8.99,
-          "image": "images/tiramisu.jpg"
+          "image": "images/tiramisu.jpg",
+          "calories": 380,
+          "protein": 6,
+          "carbs": 42,
+          "fat": 22,
+          "allergens": ["Dairy", "Eggs", "Gluten"],
+          "ingredients": [
+            "Ladyfingers",
+            "Mascarpone",
+            "Coffee",
+            "Eggs",
+            "Cocoa Powder",
+            "Sugar"
+          ]
         },
         {
           "id": 502,
           "name": "Chocolate Lava Cake",
           "description": "Warm chocolate cake with molten center, served with vanilla ice cream",
+          "detailedDescription": "Decadent chocolate cake with a rich, flowing chocolate center, served warm with premium vanilla ice cream and a light dusting of powdered sugar.",
           "price": 9.99,
-          "image": "images/lava-cake.jpg"
+          "image": "images/lava-cake.jpg",
+          "calories": 460,
+          "protein": 8,
+          "carbs": 48,
+          "fat": 28,
+          "allergens": ["Dairy", "Eggs", "Gluten"],
+          "ingredients": [
+            "Dark Chocolate",
+            "Butter",
+            "Eggs",
+            "Flour",
+            "Sugar",
+            "Vanilla Ice Cream"
+          ]
         },
         {
           "id": 503,
           "name": "Crème Brûlée",
           "description": "Rich vanilla custard topped with caramelized sugar",
+          "detailedDescription": "Silky smooth vanilla bean custard topped with a layer of caramelized sugar that cracks perfectly with each spoonful. Served with fresh seasonal berries.",
           "price": 8.99,
-          "image": "images/creme-brulee.jpg"
+          "image": "images/creme-brulee.jpg",
+          "calories": 320,
+          "protein": 4,
+          "carbs": 32,
+          "fat": 20,
+          "allergens": ["Dairy", "Eggs"],
+          "ingredients": [
+            "Heavy Cream",
+            "Vanilla Bean",
+            "Eggs",
+            "Sugar",
+            "Fresh Berries"
+          ]
         }
       ]
     },
@@ -152,22 +380,48 @@
           "id": 601,
           "name": "Craft Coffee",
           "description": "Locally roasted premium coffee",
+          "detailedDescription": "Premium coffee made from locally roasted, single-origin beans. Available as espresso, americano, cappuccino, or latte. Served with a house-made biscotti.",
           "price": 3.99,
-          "image": "images/coffee.jpg"
+          "image": "images/coffee.jpg",
+          "calories": 5,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "allergens": [],
+          "ingredients": ["Coffee Beans", "Filtered Water"]
         },
         {
           "id": 602,
           "name": "Fresh Fruit Smoothie",
           "description": "Blend of seasonal fruits with yogurt",
+          "detailedDescription": "Refreshing smoothie made with a blend of seasonal fresh fruits and creamy yogurt. Choose from berry blast, tropical paradise, or green energy variations.",
           "price": 5.99,
-          "image": "images/smoothie.jpg"
+          "image": "images/smoothie.jpg",
+          "calories": 180,
+          "protein": 4,
+          "carbs": 36,
+          "fat": 2,
+          "allergens": ["Dairy"],
+          "ingredients": ["Seasonal Fruits", "Yogurt", "Honey", "Ice"]
         },
         {
           "id": 603,
           "name": "Italian Soda",
           "description": "Sparkling water with your choice of flavored syrup",
+          "detailedDescription": "Refreshing combination of sparkling water and premium flavored syrups. Choose from raspberry, vanilla, hazelnut, or passion fruit. Topped with a touch of cream and fresh mint.",
           "price": 4.99,
-          "image": "images/italian-soda.jpg"
+          "image": "images/italian-soda.jpg",
+          "calories": 120,
+          "protein": 0,
+          "carbs": 30,
+          "fat": 0,
+          "allergens": [],
+          "ingredients": [
+            "Sparkling Water",
+            "Flavored Syrup",
+            "Optional: Cream",
+            "Mint"
+          ]
         }
       ]
     }

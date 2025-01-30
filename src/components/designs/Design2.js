@@ -1,15 +1,24 @@
 import { useState, useEffect } from "react";
 import "../../styles/Design2.css";
+import FoodModal from "../FoodModal";
+import AllergenIcons from "../AllergenIcons";
 
 function Design2({ menuData, currentLang }) {
   const [activeCategory, setActiveCategory] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const getImagePath = (imagePath) => {
     if (imagePath.startsWith("http")) {
       return imagePath;
     }
     return `${process.env.PUBLIC_URL}/${imagePath}`;
+  };
+
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
+    setIsModalOpen(true);
   };
 
   // Set initial active category
@@ -72,7 +81,11 @@ function Design2({ menuData, currentLang }) {
               <h2>{category.name}</h2>
               <div className="menu-items-grid">
                 {category.items.map((item) => (
-                  <div key={item.id} className="menu-item-card">
+                  <div
+                    key={item.id}
+                    className="menu-item-card"
+                    onClick={() => handleItemClick(item)}
+                  >
                     <img
                       src={getImagePath(item.image)}
                       alt={item.name}
@@ -81,12 +94,19 @@ function Design2({ menuData, currentLang }) {
                     <div className="item-info">
                       <h3>{item.name}</h3>
                       <p className="item-description">{item.description}</p>
-                      <p className="item-price">
-                        {new Intl.NumberFormat("de-DE", {
-                          style: "currency",
-                          currency: "EUR",
-                        }).format(item.price)}
-                      </p>
+                      <div className="item-footer">
+                        <p className="item-price">
+                          {new Intl.NumberFormat("de-DE", {
+                            style: "currency",
+                            currency: "EUR",
+                          }).format(item.price)}
+                        </p>
+                        {item.allergens && (
+                          <div className="item-allergens">
+                            <AllergenIcons allergens={item.allergens} />
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -94,6 +114,12 @@ function Design2({ menuData, currentLang }) {
             </div>
           ))}
       </main>
+
+      <FoodModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        food={selectedItem}
+      />
     </div>
   );
 }

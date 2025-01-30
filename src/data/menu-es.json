@@ -10,29 +10,87 @@
           "id": 101,
           "name": "Rollitos de Primavera",
           "description": "Verduras frescas envueltas en papel de arroz, servidas con salsa de cacahuete",
+          "detailedDescription": "Nuestros rollitos de primavera se preparan diariamente con una colorida mezcla de verduras crujientes. Cada rollito está cuidadosamente envuelto en delicado papel de arroz y se sirve con nuestra salsa de cacahuete casera.",
           "price": 6.99,
-          "image": "images/spring-rolls.jpg"
+          "image": "images/spring-rolls.jpg",
+          "calories": 120,
+          "protein": 3,
+          "carbs": 16,
+          "fat": 5,
+          "allergens": ["Cacahuetes", "Soja"],
+          "ingredients": [
+            "Papel de Arroz",
+            "Lechuga",
+            "Zanahorias",
+            "Pepino",
+            "Fideos de Arroz",
+            "Menta",
+            "Cilantro",
+            "Salsa de Cacahuete"
+          ]
         },
         {
           "id": 102,
           "name": "Pan de Ajo",
           "description": "Pan artesanal tostado con mantequilla de ajo y hierbas frescas",
+          "detailedDescription": "Pan artesanal recién horneado, untado con nuestra mantequilla de ajo especial y cubierto con perejil fresco. Tostado hasta alcanzar la perfección con un exterior crujiente y un interior suave.",
           "price": 4.99,
-          "image": "images/garlic-bread.jpg"
+          "image": "images/garlic-bread.jpg",
+          "calories": 180,
+          "protein": 4,
+          "carbs": 24,
+          "fat": 8,
+          "allergens": ["Gluten", "Lácteos"],
+          "ingredients": [
+            "Pan Artesanal",
+            "Mantequilla",
+            "Ajo",
+            "Perejil",
+            "Sal Marina"
+          ]
         },
         {
           "id": 103,
           "name": "Bruschetta",
-          "description": "Pan tostado frotado con ajo, cubierto con tomates picados, albahaca fresca y aceite de oliva",
+          "description": "Pan tostado frotado con ajo, cubierto con tomates, albahaca fresca y aceite de oliva",
+          "detailedDescription": "Entrante italiano tradicional con pan artesanal tostado frotado con ajo fresco y cubierto con una vibrante mezcla de tomates maduros, albahaca aromática y aceite de oliva virgen extra.",
           "price": 7.99,
-          "image": "images/bruschetta.jpg"
+          "image": "images/bruschetta.jpg",
+          "calories": 145,
+          "protein": 3,
+          "carbs": 18,
+          "fat": 7,
+          "allergens": ["Gluten"],
+          "ingredients": [
+            "Pan Artesanal",
+            "Tomates",
+            "Ajo",
+            "Albahaca",
+            "Aceite de Oliva",
+            "Glaseado Balsámico",
+            "Sal Marina"
+          ]
         },
         {
           "id": 104,
           "name": "Calamares Fritos",
-          "description": "Aros de calamar crujientes, servidos con salsa marinara y gajos de limón",
+          "description": "Aros de calamar crujientes servidos con salsa marinara y gajos de limón",
+          "detailedDescription": "Tiernos aros de calamar ligeramente rebozados en nuestra mezcla de harina sazonada y fritos hasta dorarse. Servidos con nuestra salsa marinara casera y gajos de limón fresco.",
           "price": 12.99,
-          "image": "images/calamari.jpg"
+          "image": "images/calamari.jpg",
+          "calories": 280,
+          "protein": 16,
+          "carbs": 26,
+          "fat": 14,
+          "allergens": ["Gluten", "Mariscos"],
+          "ingredients": [
+            "Calamares",
+            "Harina",
+            "Condimentos",
+            "Salsa Marinara",
+            "Limón",
+            "Perejil"
+          ]
         }
       ]
     },
@@ -43,23 +101,66 @@
         {
           "id": 201,
           "name": "Ensalada César",
-          "description": "Lechuga romana crujiente, queso parmesano, picatostes y aderezo César clásico",
+          "description": "Lechuga romana crujiente, parmesano, picatostes y aderezo César clásico",
+          "detailedDescription": "Una ensalada atemporal con lechuga romana fresca y crujiente en nuestro cremoso aderezo César casero. Cubierta con queso parmesano curado y picatostes sazonados con ajo.",
           "price": 10.99,
-          "image": "images/caesar-salad.jpg"
+          "image": "images/caesar-salad.jpg",
+          "calories": 320,
+          "protein": 10,
+          "carbs": 12,
+          "fat": 28,
+          "allergens": ["Lácteos", "Gluten", "Huevos"],
+          "ingredients": [
+            "Lechuga Romana",
+            "Parmesano",
+            "Picatostes",
+            "Aderezo César",
+            "Pimienta Negra"
+          ]
         },
         {
           "id": 202,
-          "name": "Sopa de Cebolla Francesa",
-          "description": "Caldo de res rico con cebollas caramelizadas, gratinado con pan y queso gruyère derretido",
+          "name": "Sopa de Cebolla",
+          "description": "Rico caldo de ternera con cebollas caramelizadas, gratinado con pan y queso gruyère",
+          "detailedDescription": "Nuestra especialidad con cebollas lentamente caramelizadas en un rico caldo de ternera realzado con un toque de coñac. Gratinada con pan tostado y queso gruyère fundido.",
           "price": 8.99,
-          "image": "images/onion-soup.jpg"
+          "image": "images/onion-soup.jpg",
+          "calories": 340,
+          "protein": 12,
+          "carbs": 28,
+          "fat": 18,
+          "allergens": ["Lácteos", "Gluten"],
+          "ingredients": [
+            "Cebollas",
+            "Caldo de Ternera",
+            "Gruyère",
+            "Pan",
+            "Coñac",
+            "Tomillo",
+            "Hojas de Laurel"
+          ]
         },
         {
           "id": 203,
           "name": "Ensalada Mediterránea",
-          "description": "Mezcla de lechugas, queso feta, aceitunas, pepinos, tomates con vinagreta balsámica",
+          "description": "Mezcla de hojas verdes, queso feta, aceitunas, pepino, tomates con vinagreta balsámica",
+          "detailedDescription": "Una refrescante mezcla de hojas verdes crujientes, queso feta cremoso, aceitunas Kalamata y verduras del huerto, aderezada con nuestra vinagreta balsámica casera con hierbas mediterráneas.",
           "price": 11.99,
-          "image": "images/med-salad.jpg"
+          "image": "images/med-salad.jpg",
+          "calories": 280,
+          "protein": 8,
+          "carbs": 14,
+          "fat": 22,
+          "allergens": ["Lácteos"],
+          "ingredients": [
+            "Hojas Verdes",
+            "Queso Feta",
+            "Aceitunas Kalamata",
+            "Pepino",
+            "Tomates",
+            "Cebolla Roja",
+            "Vinagreta Balsámica"
+          ]
         }
       ]
     },
@@ -71,29 +172,87 @@
           "id": 301,
           "name": "Salmón a la Parrilla",
           "description": "Salmón fresco del Atlántico con hierbas y limón, servido con verduras asadas",
+          "detailedDescription": "Filete de salmón del Atlántico premium asado a la perfección y sazonado con hierbas frescas y limón. Acompañado de una selección de verduras de temporada asadas.",
           "price": 24.99,
-          "image": "images/salmon.jpg"
+          "image": "images/salmon.jpg",
+          "calories": 460,
+          "protein": 42,
+          "carbs": 12,
+          "fat": 28,
+          "allergens": ["Pescado"],
+          "ingredients": [
+            "Salmón Atlántico",
+            "Verduras de Temporada",
+            "Hierbas",
+            "Limón",
+            "Aceite de Oliva",
+            "Ajo"
+          ]
         },
         {
           "id": 302,
           "name": "Filete Mignon",
-          "description": "Filete de ternera premium de 230g, servido con puré de patatas al ajo y verduras de temporada",
+          "description": "Solomillo premium de 230g, servido con puré de patatas al ajo y verduras de temporada",
+          "detailedDescription": "Solomillo premium cortado a mano y asado a su gusto, cubierto con mantequilla de hierbas. Servido con cremoso puré de patatas al ajo y verduras de temporada perfectamente sazonadas.",
           "price": 34.99,
-          "image": "images/filet-mignon.jpg"
+          "image": "images/filet-mignon.jpg",
+          "calories": 580,
+          "protein": 48,
+          "carbs": 30,
+          "fat": 32,
+          "allergens": ["Lácteos"],
+          "ingredients": [
+            "Solomillo",
+            "Patatas",
+            "Mantequilla",
+            "Ajo",
+            "Verduras de Temporada",
+            "Hierbas Frescas"
+          ]
         },
         {
           "id": 303,
           "name": "Pollo al Marsala",
           "description": "Pechuga de pollo salteada en salsa de vino Marsala con champiñones y pasta",
+          "detailedDescription": "Tierna pechuga de pollo salteada y bañada en una rica salsa de vino Marsala con champiñones salteados. Servida sobre pasta al dente con hierbas frescas y parmesano.",
           "price": 21.99,
-          "image": "images/chicken-marsala.jpg"
+          "image": "images/chicken-marsala.jpg",
+          "calories": 520,
+          "protein": 38,
+          "carbs": 42,
+          "fat": 24,
+          "allergens": ["Gluten", "Lácteos"],
+          "ingredients": [
+            "Pechuga de Pollo",
+            "Vino Marsala",
+            "Champiñones",
+            "Pasta",
+            "Mantequilla",
+            "Ajo",
+            "Hierbas Frescas"
+          ]
         },
         {
           "id": 304,
           "name": "Risotto de Verduras",
-          "description": "Arroz Arborio cremoso con verduras de temporada y queso parmesano",
+          "description": "Arroz Arborio cremoso con verduras de temporada y parmesano",
+          "detailedDescription": "Arroz Arborio cocido lentamente en caldo de verduras, terminado con vino blanco y parmesano. Salpicado con verduras de temporada y hierbas frescas para un plato vegetariano lujoso.",
           "price": 18.99,
-          "image": "images/risotto.jpg"
+          "image": "images/risotto.jpg",
+          "calories": 420,
+          "protein": 12,
+          "carbs": 68,
+          "fat": 16,
+          "allergens": ["Lácteos"],
+          "ingredients": [
+            "Arroz Arborio",
+            "Verduras de Temporada",
+            "Parmesano",
+            "Vino Blanco",
+            "Caldo de Verduras",
+            "Mantequilla",
+            "Ajo"
+          ]
         }
       ]
     },
@@ -103,17 +262,45 @@
       "items": [
         {
           "id": 401,
-          "name": "Espaguetis a la Carbonara",
+          "name": "Espaguetis Carbonara",
           "description": "Pasta romana clásica con huevos, queso pecorino, panceta y pimienta negra",
+          "detailedDescription": "Plato tradicional romano de pasta con espaguetis perfectamente cocidos, envueltos en una salsa sedosa de huevos frescos, queso pecorino curado y panceta crujiente. Terminado con pimienta negra recién molida.",
           "price": 16.99,
-          "image": "images/carbonara.jpg"
+          "image": "images/carbonara.jpg",
+          "calories": 560,
+          "protein": 24,
+          "carbs": 64,
+          "fat": 28,
+          "allergens": ["Gluten", "Lácteos", "Huevos"],
+          "ingredients": [
+            "Espaguetis",
+            "Huevos",
+            "Pecorino",
+            "Panceta",
+            "Pimienta Negra",
+            "Aceite de Oliva"
+          ]
         },
         {
           "id": 402,
           "name": "Fettuccine Alfredo",
-          "description": "Fettuccine en salsa cremosa rica con queso parmesano",
+          "description": "Fettuccine en salsa cremosa con queso parmesano",
+          "detailedDescription": "Fettuccine caseros en nuestra salsa Alfredo especial hecha con nata, mantequilla y queso parmesano curado. Un plato clásico reconfortante elevado con ingredientes de calidad.",
           "price": 15.99,
-          "image": "images/alfredo.jpg"
+          "image": "images/alfredo.jpg",
+          "calories": 620,
+          "protein": 22,
+          "carbs": 68,
+          "fat": 32,
+          "allergens": ["Gluten", "Lácteos"],
+          "ingredients": [
+            "Fettuccine",
+            "Nata",
+            "Parmesano",
+            "Mantequilla",
+            "Ajo",
+            "Pimienta Negra"
+          ]
         }
       ]
     },
@@ -125,22 +312,63 @@
           "id": 501,
           "name": "Tiramisú",
           "description": "Postre italiano clásico con bizcochos empapados en café y crema de mascarpone",
+          "detailedDescription": "Capas de bizcochos empapados en café y relleno cremoso de mascarpone, espolvoreado con cacao premium. Nuestra receta tradicional trae el auténtico sabor de Italia a su mesa.",
           "price": 8.99,
-          "image": "images/tiramisu.jpg"
+          "image": "images/tiramisu.jpg",
+          "calories": 380,
+          "protein": 6,
+          "carbs": 42,
+          "fat": 22,
+          "allergens": ["Lácteos", "Huevos", "Gluten"],
+          "ingredients": [
+            "Bizcochos",
+            "Mascarpone",
+            "Café",
+            "Huevos",
+            "Cacao",
+            "Azúcar"
+          ]
         },
         {
           "id": 502,
-          "name": "Pastel de Chocolate Fundido",
-          "description": "Pastel de chocolate caliente con centro líquido, servido con helado de vainilla",
+          "name": "Coulant de Chocolate",
+          "description": "Bizcocho caliente de chocolate con centro líquido, servido con helado de vainilla",
+          "detailedDescription": "Decadente bizcocho de chocolate con un rico centro fluido, servido caliente con helado de vainilla premium y un ligero toque de azúcar glas.",
           "price": 9.99,
-          "image": "images/lava-cake.jpg"
+          "image": "images/lava-cake.jpg",
+          "calories": 460,
+          "protein": 8,
+          "carbs": 48,
+          "fat": 28,
+          "allergens": ["Lácteos", "Huevos", "Gluten"],
+          "ingredients": [
+            "Chocolate Negro",
+            "Mantequilla",
+            "Huevos",
+            "Harina",
+            "Azúcar",
+            "Helado de Vainilla"
+          ]
         },
         {
           "id": 503,
           "name": "Crema Catalana",
-          "description": "Rica crema de vainilla con costra de azúcar caramelizado",
+          "description": "Rica crema de vainilla con azúcar caramelizado",
+          "detailedDescription": "Suave crema de vainilla con una capa de azúcar caramelizado que cruje perfectamente con cada cucharada. Servida con frutos rojos frescos de temporada.",
           "price": 8.99,
-          "image": "images/creme-brulee.jpg"
+          "image": "images/creme-brulee.jpg",
+          "calories": 320,
+          "protein": 4,
+          "carbs": 32,
+          "fat": 20,
+          "allergens": ["Lácteos", "Huevos"],
+          "ingredients": [
+            "Nata",
+            "Vaina de Vainilla",
+            "Huevos",
+            "Azúcar",
+            "Frutos Rojos Frescos"
+          ]
         }
       ]
     },
@@ -152,22 +380,48 @@
           "id": 601,
           "name": "Café Artesanal",
           "description": "Café premium tostado localmente",
+          "detailedDescription": "Café premium preparado con granos de origen único tostados localmente. Disponible como espresso, americano, cappuccino o latte. Servido con biscotti casero.",
           "price": 3.99,
-          "image": "images/coffee.jpg"
+          "image": "images/coffee.jpg",
+          "calories": 5,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "allergens": [],
+          "ingredients": ["Granos de Café", "Agua Filtrada"]
         },
         {
           "id": 602,
           "name": "Batido de Frutas Frescas",
           "description": "Mezcla de frutas de temporada con yogur",
+          "detailedDescription": "Refrescante batido preparado con una mezcla de frutas frescas de temporada y yogur cremoso. Elija entre explosión de bayas, paraíso tropical o energía verde.",
           "price": 5.99,
-          "image": "images/smoothie.jpg"
+          "image": "images/smoothie.jpg",
+          "calories": 180,
+          "protein": 4,
+          "carbs": 36,
+          "fat": 2,
+          "allergens": ["Lácteos"],
+          "ingredients": ["Frutas de Temporada", "Yogur", "Miel", "Hielo"]
         },
         {
           "id": 603,
-          "name": "Refresco Italiano",
-          "description": "Agua con gas con jarabe a elección",
+          "name": "Soda Italiana",
+          "description": "Agua con gas con jarabe de sabores a elegir",
+          "detailedDescription": "Refrescante combinación de agua con gas y jarabes de sabores premium. Elija entre frambuesa, vainilla, avellana o maracuyá. Coronado con un toque de nata y menta fresca.",
           "price": 4.99,
-          "image": "images/italian-soda.jpg"
+          "image": "images/italian-soda.jpg",
+          "calories": 120,
+          "protein": 0,
+          "carbs": 30,
+          "fat": 0,
+          "allergens": [],
+          "ingredients": [
+            "Agua con Gas",
+            "Jarabe de Sabores",
+            "Opcional: Nata",
+            "Menta"
+          ]
         }
       ]
     }

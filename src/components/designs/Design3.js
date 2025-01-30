@@ -1,11 +1,22 @@
+import { useState } from "react";
 import "../../styles/Design3.css";
+import FoodModal from "../FoodModal";
+import AllergenIcons from "../AllergenIcons";
 
 function Design3({ menuData, currentLang }) {
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const getImagePath = (imagePath) => {
     if (imagePath.startsWith("http")) {
       return imagePath;
     }
     return `${process.env.PUBLIC_URL}/${imagePath}`;
+  };
+
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
+    setIsModalOpen(true);
   };
 
   return (
@@ -37,7 +48,11 @@ function Design3({ menuData, currentLang }) {
 
             <div className="elegant-items">
               {category.items.map((item) => (
-                <div key={item.id} className="elegant-item">
+                <div
+                  key={item.id}
+                  className="elegant-item"
+                  onClick={() => handleItemClick(item)}
+                >
                   <div className="item-image-container">
                     <img
                       src={getImagePath(item.image)}
@@ -57,6 +72,13 @@ function Design3({ menuData, currentLang }) {
                       </span>
                     </div>
                     <p className="elegant-description">{item.description}</p>
+                    {item.allergens && (
+                      <div className="elegant-footer">
+                        <div className="elegant-allergens">
+                          <AllergenIcons allergens={item.allergens} />
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
@@ -64,6 +86,12 @@ function Design3({ menuData, currentLang }) {
           </section>
         ))}
       </div>
+
+      <FoodModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        food={selectedItem}
+      />
     </div>
   );
 }

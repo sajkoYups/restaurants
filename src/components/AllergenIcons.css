@@ -1,0 +1,20 @@
+.allergen-icons {
+  display: flex;
+  gap: 4px;
+  font-size: 14px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.allergen-icons:hover {
+  opacity: 1;
+}
+
+.allergen-icon {
+  cursor: help;
+  transition: transform 0.2s ease;
+}
+
+.allergen-icon:hover {
+  transform: scale(1.2);
+}

@@ -10,29 +10,87 @@
           "id": 101,
           "name": "Rouleaux de Printemps",
           "description": "Légumes frais enveloppés dans du papier de riz, servis avec une sauce aux cacahuètes",
+          "detailedDescription": "Nos rouleaux de printemps sont préparés quotidiennement avec un mélange coloré de légumes croquants. Chaque rouleau est soigneusement enveloppé dans du papier de riz délicat et servi avec notre sauce aux cacahuètes maison.",
           "price": 6.99,
-          "image": "images/spring-rolls.jpg"
+          "image": "images/spring-rolls.jpg",
+          "calories": 120,
+          "protein": 3,
+          "carbs": 16,
+          "fat": 5,
+          "allergens": ["Arachides", "Soja"],
+          "ingredients": [
+            "Papier de Riz",
+            "Laitue",
+            "Carottes",
+            "Concombre",
+            "Nouilles de Riz",
+            "Menthe",
+            "Coriandre",
+            "Sauce Cacahuète"
+          ]
         },
         {
           "id": 102,
           "name": "Pain à l'Ail",
-          "description": "Pain artisanal grillé avec beurre à l'ail et herbes fraîches",
+          "description": "Pain artisanal grillé au beurre à l'ail et aux herbes fraîches",
+          "detailedDescription": "Pain artisanal fraîchement cuit, nappé de notre beurre à l'ail signature et garni de persil frais. Grillé à la perfection avec un extérieur croustillant et un intérieur moelleux.",
           "price": 4.99,
-          "image": "images/garlic-bread.jpg"
+          "image": "images/garlic-bread.jpg",
+          "calories": 180,
+          "protein": 4,
+          "carbs": 24,
+          "fat": 8,
+          "allergens": ["Gluten", "Lait"],
+          "ingredients": [
+            "Pain Artisanal",
+            "Beurre",
+            "Ail",
+            "Persil",
+            "Sel de Mer"
+          ]
         },
         {
           "id": 103,
           "name": "Bruschetta",
-          "description": "Pain grillé frotté à l'ail, garni de tomates en dés, basilic frais et huile d'olive",
+          "description": "Pain grillé frotté à l'ail, garni de tomates, basilic frais et huile d'olive",
+          "detailedDescription": "Entrée italienne traditionnelle avec du pain artisanal grillé frotté à l'ail frais et garni d'un mélange vibrant de tomates mûres, basilic parfumé et huile d'olive extra vierge.",
           "price": 7.99,
-          "image": "images/bruschetta.jpg"
+          "image": "images/bruschetta.jpg",
+          "calories": 145,
+          "protein": 3,
+          "carbs": 18,
+          "fat": 7,
+          "allergens": ["Gluten"],
+          "ingredients": [
+            "Pain Artisanal",
+            "Tomates",
+            "Ail",
+            "Basilic",
+            "Huile d'Olive",
+            "Glaze Balsamique",
+            "Sel de Mer"
+          ]
         },
         {
           "id": 104,
           "name": "Calamars Frits",
-          "description": "Anneaux de calamar croustillants, servis avec sauce marinara et quartiers de citron",
+          "description": "Anneaux de calamars croustillants servis avec sauce marinara et quartiers de citron",
+          "detailedDescription": "Tendres anneaux de calamars légèrement enrobés de notre mélange de farine assaisonnée et frits jusqu'à dorés. Servis avec notre sauce marinara maison et quartiers de citron frais.",
           "price": 12.99,
-          "image": "images/calamari.jpg"
+          "image": "images/calamari.jpg",
+          "calories": 280,
+          "protein": 16,
+          "carbs": 26,
+          "fat": 14,
+          "allergens": ["Gluten", "Fruits de Mer"],
+          "ingredients": [
+            "Calamars",
+            "Farine",
+            "Assaisonnements",
+            "Sauce Marinara",
+            "Citron",
+            "Persil"
+          ]
         }
       ]
     },
@@ -43,23 +101,66 @@
         {
           "id": 201,
           "name": "Salade César",
-          "description": "Laitue romaine croquante, parmesan, croûtons et vinaigrette César classique",
+          "description": "Laitue romaine croquante, parmesan, croûtons et sauce César classique",
+          "detailedDescription": "Une salade intemporelle avec de la laitue romaine fraîche et croquante dans notre sauce César crémeuse maison. Garnie de parmesan affiné et de croûtons assaisonnés à l'ail.",
           "price": 10.99,
-          "image": "images/caesar-salad.jpg"
+          "image": "images/caesar-salad.jpg",
+          "calories": 320,
+          "protein": 10,
+          "carbs": 12,
+          "fat": 28,
+          "allergens": ["Lait", "Gluten", "Œufs"],
+          "ingredients": [
+            "Laitue Romaine",
+            "Parmesan",
+            "Croûtons",
+            "Sauce César",
+            "Poivre Noir"
+          ]
         },
         {
           "id": 202,
-          "name": "Soupe à l'Oignon Française",
-          "description": "Bouillon de bœuf riche avec oignons caramélisés, gratinée au pain et fromage gruyère fondu",
+          "name": "Soupe à l'Oignon",
+          "description": "Bouillon de bœuf riche aux oignons caramélisés, gratiné avec pain et Gruyère",
+          "detailedDescription": "Notre spécialité avec des oignons lentement caramélisés dans un riche bouillon de bœuf rehaussé d'une touche de cognac. Gratinée avec du pain grillé et du Gruyère fondant.",
           "price": 8.99,
-          "image": "images/onion-soup.jpg"
+          "image": "images/onion-soup.jpg",
+          "calories": 340,
+          "protein": 12,
+          "carbs": 28,
+          "fat": 18,
+          "allergens": ["Lait", "Gluten"],
+          "ingredients": [
+            "Oignons",
+            "Bouillon de Bœuf",
+            "Gruyère",
+            "Pain",
+            "Cognac",
+            "Thym",
+            "Feuilles de Laurier"
+          ]
         },
         {
           "id": 203,
           "name": "Salade Méditerranéenne",
-          "description": "Mélange de salades, fromage feta, olives, concombres, tomates avec vinaigrette balsamique",
+          "description": "Mesclun, feta, olives, concombre, tomates avec vinaigrette balsamique",
+          "detailedDescription": "Un mélange rafraîchissant de mesclun croquant, feta crémeuse, olives Kalamata et légumes du jardin, assaisonné de notre vinaigrette balsamique maison aux herbes méditerranéennes.",
           "price": 11.99,
-          "image": "images/med-salad.jpg"
+          "image": "images/med-salad.jpg",
+          "calories": 280,
+          "protein": 8,
+          "carbs": 14,
+          "fat": 22,
+          "allergens": ["Lait"],
+          "ingredients": [
+            "Mesclun",
+            "Feta",
+            "Olives Kalamata",
+            "Concombre",
+            "Tomates",
+            "Oignon Rouge",
+            "Vinaigrette Balsamique"
+          ]
         }
       ]
     },
@@ -71,29 +172,87 @@
           "id": 301,
           "name": "Saumon Grillé",
           "description": "Saumon frais de l'Atlantique aux herbes et citron, servi avec légumes rôtis",
+          "detailedDescription": "Filet de saumon de l'Atlantique premium grillé à la perfection et assaisonné d'herbes fraîches et de citron. Accompagné d'un medley de légumes de saison rôtis.",
           "price": 24.99,
-          "image": "images/salmon.jpg"
+          "image": "images/salmon.jpg",
+          "calories": 460,
+          "protein": 42,
+          "carbs": 12,
+          "fat": 28,
+          "allergens": ["Poisson"],
+          "ingredients": [
+            "Saumon Atlantique",
+            "Légumes de Saison",
+            "Herbes",
+            "Citron",
+            "Huile d'Olive",
+            "Ail"
+          ]
         },
         {
           "id": 302,
           "name": "Filet Mignon",
-          "description": "Filet de bœuf premium de 230g, servi avec purée de pommes de terre à l'ail et légumes de saison",
+          "description": "Filet de bœuf premium 230g, servi avec purée à l'ail et légumes de saison",
+          "detailedDescription": "Filet de bœuf premium coupé à la main et grillé selon votre préférence, nappé de beurre aux herbes. Servi avec une purée à l'ail crémeuse et des légumes de saison parfaitement assaisonnés.",
           "price": 34.99,
-          "image": "images/filet-mignon.jpg"
+          "image": "images/filet-mignon.jpg",
+          "calories": 580,
+          "protein": 48,
+          "carbs": 30,
+          "fat": 32,
+          "allergens": ["Lait"],
+          "ingredients": [
+            "Filet de Bœuf",
+            "Pommes de Terre",
+            "Beurre",
+            "Ail",
+            "Légumes de Saison",
+            "Herbes Fraîches"
+          ]
         },
         {
           "id": 303,
           "name": "Poulet Marsala",
-          "description": "Poitrine de poulet sautée dans une sauce au vin Marsala avec champignons et pâtes",
+          "description": "Poitrine de poulet poêlée, sauce au vin Marsala avec champignons et pâtes",
+          "detailedDescription": "Tendre poitrine de poulet poêlée et nappée d'une riche sauce au vin Marsala avec champignons sautés. Servie sur des pâtes al dente avec herbes fraîches et parmesan.",
           "price": 21.99,
-          "image": "images/chicken-marsala.jpg"
+          "image": "images/chicken-marsala.jpg",
+          "calories": 520,
+          "protein": 38,
+          "carbs": 42,
+          "fat": 24,
+          "allergens": ["Gluten", "Lait"],
+          "ingredients": [
+            "Poitrine de Poulet",
+            "Vin Marsala",
+            "Champignons",
+            "Pâtes",
+            "Beurre",
+            "Ail",
+            "Herbes Fraîches"
+          ]
         },
         {
           "id": 304,
           "name": "Risotto aux Légumes",
-          "description": "Riz Arborio crémeux avec légumes de saison et parmesan",
+          "description": "Riz Arborio crémeux aux légumes de saison et parmesan",
+          "detailedDescription": "Riz Arborio cuit lentement dans un bouillon de légumes, fini au vin blanc et parmesan. Parsemé de légumes de saison et d'herbes fraîches pour un plat végétarien luxueux.",
           "price": 18.99,
-          "image": "images/risotto.jpg"
+          "image": "images/risotto.jpg",
+          "calories": 420,
+          "protein": 12,
+          "carbs": 68,
+          "fat": 16,
+          "allergens": ["Lait"],
+          "ingredients": [
+            "Riz Arborio",
+            "Légumes de Saison",
+            "Parmesan",
+            "Vin Blanc",
+            "Bouillon de Légumes",
+            "Beurre",
+            "Ail"
+          ]
         }
       ]
     },
@@ -104,16 +263,44 @@
         {
           "id": 401,
           "name": "Spaghetti Carbonara",
-          "description": "Pâtes romaines classiques aux œufs, fromage pecorino, pancetta et poivre noir",
+          "description": "Pâtes romaines classiques aux œufs, pecorino, pancetta et poivre noir",
+          "detailedDescription": "Plat de pâtes romain traditionnel fait de spaghetti parfaitement cuits, enrobés d'une sauce soyeuse aux œufs frais, pecorino affiné et pancetta croustillante. Fini avec du poivre noir fraîchement moulu.",
           "price": 16.99,
-          "image": "images/carbonara.jpg"
+          "image": "images/carbonara.jpg",
+          "calories": 560,
+          "protein": 24,
+          "carbs": 64,
+          "fat": 28,
+          "allergens": ["Gluten", "Lait", "Œufs"],
+          "ingredients": [
+            "Spaghetti",
+            "Œufs",
+            "Pecorino",
+            "Pancetta",
+            "Poivre Noir",
+            "Huile d'Olive"
+          ]
         },
         {
           "id": 402,
           "name": "Fettuccine Alfredo",
-          "description": "Fettuccine dans une sauce crémeuse riche au parmesan",
+          "description": "Fettuccine dans une sauce crémeuse au parmesan",
+          "detailedDescription": "Fettuccine maison dans notre sauce Alfredo signature à base de crème fraîche, beurre et parmesan affiné. Un plat réconfortant classique sublimé par des ingrédients de qualité.",
           "price": 15.99,
-          "image": "images/alfredo.jpg"
+          "image": "images/alfredo.jpg",
+          "calories": 620,
+          "protein": 22,
+          "carbs": 68,
+          "fat": 32,
+          "allergens": ["Gluten", "Lait"],
+          "ingredients": [
+            "Fettuccine",
+            "Crème Fraîche",
+            "Parmesan",
+            "Beurre",
+            "Ail",
+            "Poivre Noir"
+          ]
         }
       ]
     },
@@ -124,23 +311,64 @@
         {
           "id": 501,
           "name": "Tiramisu",
-          "description": "Dessert italien classique aux biscuits imbibés de café et crème de mascarpone",
+          "description": "Dessert italien classique aux biscuits imbibés de café et crème mascarpone",
+          "detailedDescription": "Couches de biscuits imbibés de café et de crème mascarpone, saupoudrées de cacao premium. Notre recette traditionnelle apporte le goût authentique de l'Italie à votre table.",
           "price": 8.99,
-          "image": "images/tiramisu.jpg"
+          "image": "images/tiramisu.jpg",
+          "calories": 380,
+          "protein": 6,
+          "carbs": 42,
+          "fat": 22,
+          "allergens": ["Lait", "Œufs", "Gluten"],
+          "ingredients": [
+            "Biscuits",
+            "Mascarpone",
+            "Café",
+            "Œufs",
+            "Cacao",
+            "Sucre"
+          ]
         },
         {
           "id": 502,
-          "name": "Gâteau Coulant au Chocolat",
-          "description": "Gâteau au chocolat chaud avec cœur coulant, servi avec glace à la vanille",
+          "name": "Gâteau au Chocolat Coulant",
+          "description": "Gâteau au chocolat chaud avec cœur fondant, servi avec glace vanille",
+          "detailedDescription": "Gâteau au chocolat décadent avec un cœur coulant riche, servi chaud avec de la glace vanille premium et une légère touche de sucre glace.",
           "price": 9.99,
-          "image": "images/lava-cake.jpg"
+          "image": "images/lava-cake.jpg",
+          "calories": 460,
+          "protein": 8,
+          "carbs": 48,
+          "fat": 28,
+          "allergens": ["Lait", "Œufs", "Gluten"],
+          "ingredients": [
+            "Chocolat Noir",
+            "Beurre",
+            "Œufs",
+            "Farine",
+            "Sucre",
+            "Glace Vanille"
+          ]
         },
         {
           "id": 503,
           "name": "Crème Brûlée",
-          "description": "Crème à la vanille riche avec croûte de sucre caramélisé",
+          "description": "Crème vanille onctueuse avec sucre caramélisé",
+          "detailedDescription": "Crème à la vanille soyeuse avec une couche de sucre caramélisé qui craque parfaitement à chaque cuillère. Servie avec des fruits rouges frais de saison.",
           "price": 8.99,
-          "image": "images/creme-brulee.jpg"
+          "image": "images/creme-brulee.jpg",
+          "calories": 320,
+          "protein": 4,
+          "carbs": 32,
+          "fat": 20,
+          "allergens": ["Lait", "Œufs"],
+          "ingredients": [
+            "Crème Fraîche",
+            "Gousse de Vanille",
+            "Œufs",
+            "Sucre",
+            "Fruits Rouges Frais"
+          ]
         }
       ]
     },
@@ -152,22 +380,48 @@
           "id": 601,
           "name": "Café Artisanal",
           "description": "Café premium torréfié localement",
+          "detailedDescription": "Café premium préparé à partir de grains d'origine unique torréfiés localement. Disponible en espresso, americano, cappuccino ou latte. Servi avec un biscotti maison.",
           "price": 3.99,
-          "image": "images/coffee.jpg"
+          "image": "images/coffee.jpg",
+          "calories": 5,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "allergens": [],
+          "ingredients": ["Grains de Café", "Eau Filtrée"]
         },
         {
           "id": 602,
           "name": "Smoothie aux Fruits Frais",
           "description": "Mélange de fruits de saison avec yaourt",
+          "detailedDescription": "Smoothie rafraîchissant préparé avec un mélange de fruits frais de saison et yaourt crémeux. Choisissez parmi explosion de baies, paradis tropical ou énergie verte.",
           "price": 5.99,
-          "image": "images/smoothie.jpg"
+          "image": "images/smoothie.jpg",
+          "calories": 180,
+          "protein": 4,
+          "carbs": 36,
+          "fat": 2,
+          "allergens": ["Lait"],
+          "ingredients": ["Fruits de Saison", "Yaourt", "Miel", "Glace"]
         },
         {
           "id": 603,
-          "name": "Limonade Italienne",
-          "description": "Eau gazeuse avec sirop au choix",
+          "name": "Soda Italien",
+          "description": "Eau gazeuse avec sirop aromatisé au choix",
+          "detailedDescription": "Combinaison rafraîchissante d'eau gazeuse et de sirops aromatisés premium. Choisissez parmi framboise, vanille, noisette ou fruit de la passion. Garni d'une touche de crème et de menthe fraîche.",
           "price": 4.99,
-          "image": "images/italian-soda.jpg"
+          "image": "images/italian-soda.jpg",
+          "calories": 120,
+          "protein": 0,
+          "carbs": 30,
+          "fat": 0,
+          "allergens": [],
+          "ingredients": [
+            "Eau Gazeuse",
+            "Sirop Aromatisé",
+            "Option: Crème",
+            "Menthe"
+          ]
         }
       ]
     }
