@@ -1,0 +1,37 @@
+:root {
+  /* Primary Colors */
+  --primary-main: #e67e22;
+  --primary-light: #f39c12;
+  --primary-dark: #d35400;
+  --primary-text: #ffffff;
+
+  /* Secondary Colors */
+  --secondary-main: #2c3e50;
+  --secondary-light: #34495e;
+  --secondary-dark: #2c3e50;
+  --secondary-text: #ffffff;
+
+  /* Background Colors */
+  --background-main: #fff9f5;
+  --background-light: #ffffff;
+  --background-dark: #f5eee6;
+  --background-gradient: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+
+  /* Text Colors */
+  --text-primary: #2c3e50;
+  --text-secondary: #595959;
+  --text-light: #7f8c8d;
+  --text-white: #ffffff;
+
+  /* Accent Colors */
+  --accent-success: #27ae60;
+  --accent-warning: #f1c40f;
+  --accent-error: #e74c3c;
+  --accent-info: #3498db;
+
+  /* UI Elements */
+  --ui-cardBg: #ffffff;
+  --ui-border: #e5e5e5;
+  --ui-shadow: rgba(0, 0, 0, 0.1);
+  --ui-hover: rgba(230, 126, 34, 0.05);
+}

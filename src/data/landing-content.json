@@ -1,0 +1,132 @@
+{
+  "en": {
+    "hero": {
+      "title": "Digital Menus Made Simple",
+      "subtitle": "Transform your restaurant's menu into an interactive digital experience with QR codes",
+      "cta": "Try It Now",
+      "description": "Join hundreds of restaurants already using Speisekarte QR to modernize their dining experience"
+    },
+    "features": [
+      {
+        "title": "Easy Updates",
+        "description": "Update your menu instantly, anytime, anywhere. No more printing costs or waiting times.",
+        "icon": "edit"
+      },
+      {
+        "title": "Multi-Language Support",
+        "description": "Automatically present your menu in multiple languages, making it accessible to all your customers.",
+        "icon": "language"
+      },
+      {
+        "title": "Detailed Analytics",
+        "description": "Gain insights into customer preferences and popular dishes with built-in analytics.",
+        "icon": "chart"
+      },
+      {
+        "title": "Beautiful Designs",
+        "description": "Choose from multiple professional designs that showcase your menu beautifully.",
+        "icon": "design"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Sarah Miller",
+        "position": "Owner, The Golden Plate",
+        "image": "images/testimonial1.jpg",
+        "text": "Switching to Speisekarte QR has saved us time and money. Our customers love how easy it is to view our menu in their preferred language."
+      },
+      {
+        "name": "Michael Chen",
+        "position": "Manager, Asian Fusion",
+        "image": "images/testimonial2.jpg",
+        "text": "The multi-language support is a game-changer. Our international customers appreciate being able to read the menu in their native language."
+      },
+      {
+        "name": "Laura Schmidt",
+        "position": "Restaurant Owner, Café Berlin",
+        "image": "images/testimonial3.jpg",
+        "text": "The ability to update our specials instantly and the beautiful design options have transformed how we present our menu to customers."
+      }
+    ],
+    "callToAction": {
+      "title": "Ready to Modernize Your Menu?",
+      "description": "Join the digital revolution in restaurant menus",
+      "primaryButton": "Get Started",
+      "secondaryButton": "View Demo Menu"
+    },
+    "footer": {
+      "copyright": "© 2024 Speisekarte QR. All rights reserved.",
+      "links": {
+        "about": "About Us",
+        "contact": "Contact",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+      }
+    }
+  },
+  "de": {
+    "hero": {
+      "title": "Digitale Speisekarten leicht gemacht",
+      "subtitle": "Verwandeln Sie Ihre Restaurantspeisekarte mit QR-Codes in ein interaktives digitales Erlebnis",
+      "cta": "Jetzt testen",
+      "description": "Schließen Sie sich Hunderten von Restaurants an, die bereits Speisekarte QR nutzen, um ihr Speisenerlebnis zu modernisieren"
+    },
+    "features": [
+      {
+        "title": "Einfache Aktualisierungen",
+        "description": "Aktualisieren Sie Ihre Speisekarte sofort, jederzeit und überall. Keine Druckkosten oder Wartezeiten mehr.",
+        "icon": "edit"
+      },
+      {
+        "title": "Mehrsprachige Unterstützung",
+        "description": "Präsentieren Sie Ihre Speisekarte automatisch in mehreren Sprachen und machen Sie sie für alle Ihre Kunden zugänglich.",
+        "icon": "language"
+      },
+      {
+        "title": "Detaillierte Analysen",
+        "description": "Gewinnen Sie Einblicke in Kundenpräferenzen und beliebte Gerichte mit integrierter Analytik.",
+        "icon": "chart"
+      },
+      {
+        "title": "Schöne Designs",
+        "description": "Wählen Sie aus mehreren professionellen Designs, die Ihre Speisekarte optimal präsentieren.",
+        "icon": "design"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Sarah Miller",
+        "position": "Inhaberin, The Golden Plate",
+        "image": "images/testimonial1.jpg",
+        "text": "Der Wechsel zu Speisekarte QR hat uns Zeit und Geld gespart. Unsere Kunden lieben es, wie einfach sie die Speisekarte in ihrer bevorzugten Sprache ansehen können."
+      },
+      {
+        "name": "Michael Chen",
+        "position": "Manager, Asian Fusion",
+        "image": "images/testimonial2.jpg",
+        "text": "Die mehrsprachige Unterstützung ist bahnbrechend. Unsere internationalen Kunden schätzen es, die Speisekarte in ihrer Muttersprache lesen zu können."
+      },
+      {
+        "name": "Laura Schmidt",
+        "position": "Restaurantbesitzerin, Café Berlin",
+        "image": "images/testimonial3.jpg",
+        "text": "Die Möglichkeit, unsere Tagesangebote sofort zu aktualisieren, und die schönen Designoptionen haben die Präsentation unserer Speisekarte völlig verändert."
+      }
+    ],
+    "callToAction": {
+      "title": "Bereit, Ihre Speisekarte zu modernisieren?",
+      "description": "Werden Sie Teil der digitalen Revolution in der Gastronomie",
+      "primaryButton": "Jetzt starten",
+      "secondaryButton": "Demo-Menü ansehen"
+    },
+    "footer": {
+      "copyright": "© 2024 Speisekarte QR. Alle Rechte vorbehalten.",
+      "links": {
+        "about": "Über uns",
+        "contact": "Kontakt",
+        "privacy": "Datenschutz",
+        "terms": "Nutzungsbedingungen"
+      }
+    }
+  }
+}

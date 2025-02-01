@@ -1,4 +1,12 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Header from "./components/Header";
+import LandingPage from "./components/LandingPage";
 import "./App.css";
 import menuEnglish from "./data/menu-en.json";
 import menuGerman from "./data/menu-de.json";
@@ -39,29 +47,44 @@ function App() {
     }
   };
 
-  return (
-    <div className="App">
-      <div className="design-switcher">
-        {designs.map((design) => (
-          <button
-            key={design.id}
-            onClick={() => setCurrentDesign(design.id)}
-            className={`design-btn ${
-              currentDesign === design.id ? "active" : ""
-            }`}
-          >
-            {design.name}
-          </button>
-        ))}
-      </div>
+  const MenuPage = () => (
+    <div className="menu-page">
+      <div className="menu-controls">
+        <div className="design-switcher">
+          {designs.map((design) => (
+            <button
+              key={design.id}
+              onClick={() => setCurrentDesign(design.id)}
+              className={`design-btn ${
+                currentDesign === design.id ? "active" : ""
+              }`}
+            >
+              {design.name}
+            </button>
+          ))}
+        </div>
 
-      <LanguageSwitcher
-        currentLang={currentLang}
-        setCurrentLang={setCurrentLang}
-      />
+        <LanguageSwitcher
+          currentLang={currentLang}
+          setCurrentLang={setCurrentLang}
+        />
+      </div>
 
       {renderCurrentDesign()}
     </div>
+  );
+
+  return (
+    <Router>
+      <div className="App">
+        <Header currentLang={currentLang} onLanguageChange={setCurrentLang} />
+        <Routes>
+          <Route path="/" element={<LandingPage currentLang={currentLang} />} />
+          <Route path="/menu" element={<MenuPage />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
