@@ -139,7 +139,7 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 480px) {
   .App {
-    padding-top: 120px; /* More space for mobile header */
+    padding-top: 20px; /* More space for mobile header */
   }
 }
 

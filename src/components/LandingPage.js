@@ -2,13 +2,24 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import landingContent from "../data/landing-content.json";
 import "./LandingPage.css";
-import { FaEdit, FaLanguage, FaChartBar, FaPalette } from "react-icons/fa";
+import {
+  FaEdit,
+  FaLanguage,
+  FaChartBar,
+  FaPalette,
+  FaTree,
+  FaRecycle,
+  FaLeaf,
+} from "react-icons/fa";
 
 const iconMap = {
   edit: FaEdit,
   language: FaLanguage,
   chart: FaChartBar,
   design: FaPalette,
+  tree: FaTree,
+  recycle: FaRecycle,
+  leaf: FaLeaf,
 };
 
 const LandingPage = ({ currentLang = "en" }) => {
@@ -48,6 +59,36 @@ const LandingPage = ({ currentLang = "en" }) => {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      {/* Environmental Benefits Section */}
+      <section className="environmental">
+        <h2>{content.environmental.title}</h2>
+        <p className="environmental-subtitle">
+          {content.environmental.subtitle}
+        </p>
+        <div className="environmental-benefits">
+          {content.environmental.benefits.map((benefit, index) => {
+            const Icon = iconMap[benefit.icon];
+            return (
+              <div key={index} className="benefit-card">
+                <div className="benefit-icon">
+                  <Icon />
+                </div>
+                <h3>{benefit.title}</h3>
+                <p>{benefit.description}</p>
+              </div>
+            );
+          })}
+        </div>
+        <div className="certification-section">
+          <h3>{content.environmental.certification.title}</h3>
+          <p>{content.environmental.certification.description}</p>
+          <div className="eco-badge">
+            <FaLeaf className="badge-icon" />
+            <span>{content.environmental.certification.badge}</span>
+          </div>
         </div>
       </section>
 

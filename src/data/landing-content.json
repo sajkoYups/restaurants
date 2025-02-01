@@ -28,6 +28,32 @@
         "icon": "design"
       }
     ],
+    "environmental": {
+      "title": "Go Green with Digital Menus",
+      "subtitle": "Make a positive impact on our planet",
+      "benefits": [
+        {
+          "title": "Save Trees",
+          "description": "By switching to digital menus, each restaurant saves approximately 90,000 sheets of paper per year.",
+          "icon": "tree"
+        },
+        {
+          "title": "Reduce Waste",
+          "description": "Eliminate the need for constant menu reprints and disposal of outdated menus.",
+          "icon": "recycle"
+        },
+        {
+          "title": "Lower Carbon Footprint",
+          "description": "Reduce printing, transportation, and disposal-related CO2 emissions.",
+          "icon": "leaf"
+        }
+      ],
+      "certification": {
+        "title": "Eco-Friendly Restaurant Certificate",
+        "description": "Get recognized for your commitment to sustainability. Display your digital certificate showing your contribution to environmental conservation.",
+        "badge": "Certified Green Restaurant Menu"
+      }
+    },
     "testimonials": [
       {
         "name": "Sarah Miller",
@@ -93,6 +119,32 @@
         "icon": "design"
       }
     ],
+    "environmental": {
+      "title": "Umweltfreundlich mit digitalen Speisekarten",
+      "subtitle": "Leisten Sie einen positiven Beitrag für unseren Planeten",
+      "benefits": [
+        {
+          "title": "Bäume schützen",
+          "description": "Durch den Umstieg auf digitale Speisekarten spart jedes Restaurant etwa 90.000 Blatt Papier pro Jahr.",
+          "icon": "tree"
+        },
+        {
+          "title": "Müll reduzieren",
+          "description": "Eliminieren Sie die Notwendigkeit ständiger Neudrucke und Entsorgung veralteter Speisekarten.",
+          "icon": "recycle"
+        },
+        {
+          "title": "CO2-Fußabdruck verringern",
+          "description": "Reduzieren Sie die CO2-Emissionen durch Druck, Transport und Entsorgung.",
+          "icon": "leaf"
+        }
+      ],
+      "certification": {
+        "title": "Umweltfreundliches Restaurant-Zertifikat",
+        "description": "Werden Sie für Ihr Engagement für Nachhaltigkeit ausgezeichnet. Zeigen Sie Ihr digitales Zertifikat, das Ihren Beitrag zum Umweltschutz belegt.",
+        "badge": "Zertifizierte Grüne Restaurantspeisekarte"
+      }
+    },
     "testimonials": [
       {
         "name": "Sarah Miller",

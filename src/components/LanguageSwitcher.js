@@ -1,75 +1,79 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./LanguageSwitcher.css";
 
 const languages = [
-  { code: "en", name: "English" },
-  { code: "de", name: "Deutsch" },
-  { code: "fr", name: "Français" },
-  { code: "es", name: "Español" },
+  {
+    code: "en",
+    flag: "🇬🇧",
+    name: "English",
+  },
+  {
+    code: "de",
+    flag: "🇩🇪",
+    name: "Deutsch",
+  },
+  {
+    code: "fr",
+    flag: "🇫🇷",
+    name: "Français",
+  },
+  {
+    code: "es",
+    flag: "🇪🇸",
+    name: "Español",
+  },
 ];
 
 const LanguageSwitcher = ({ currentLang, setCurrentLang }) => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const currentLanguage = languages.find((lang) => lang.code === currentLang);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
     };
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const getCurrentLanguageName = () => {
-    return (
-      languages.find((lang) => lang.code === currentLang)?.name ||
-      "Select Language"
-    );
+  const handleLanguageSelect = (langCode) => {
+    setCurrentLang(langCode);
+    setIsOpen(false);
   };
 
-  if (isMobile) {
-    return (
-      <div className="language-switcher-mobile">
-        <button
-          className="dropdown-button"
-          onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        >
-          {getCurrentLanguageName()} ▼
-        </button>
-        {isDropdownOpen && (
-          <div className="dropdown-menu">
-            {languages.map((lang) => (
-              <button
-                key={lang.code}
-                onClick={() => {
-                  setCurrentLang(lang.code);
-                  setIsDropdownOpen(false);
-                }}
-                className={`lang-btn ${
-                  currentLang === lang.code ? "active" : ""
-                }`}
-              >
-                {lang.name}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  }
-
   return (
-    <div className="language-switcher">
-      {languages.map((lang) => (
-        <button
-          key={lang.code}
-          onClick={() => setCurrentLang(lang.code)}
-          className={`lang-btn ${currentLang === lang.code ? "active" : ""}`}
-        >
-          {lang.name}
-        </button>
-      ))}
+    <div className="lang-switcher" ref={dropdownRef}>
+      <button
+        className="lang-switcher-button"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label={`Current language: ${currentLanguage.name}`}
+      >
+        <span className="flag">{currentLanguage.flag}</span>
+        <span className="arrow">▼</span>
+      </button>
+
+      {isOpen && (
+        <div className="lang-dropdown">
+          {languages.map((lang) => (
+            <button
+              key={lang.code}
+              className={`lang-option ${
+                currentLang === lang.code ? "active" : ""
+              }`}
+              onClick={() => handleLanguageSelect(lang.code)}
+              aria-label={`Switch to ${lang.name}`}
+            >
+              <span className="flag">{lang.flag}</span>
+              <span className="lang-name">{lang.name}</span>
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

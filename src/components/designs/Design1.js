@@ -2,8 +2,8 @@ import { useState } from "react";
 import "../../styles/Design1.css";
 import FoodModal from "../FoodModal";
 import AllergenIcons from "../AllergenIcons";
-
-function Design1({ menuData, currentLang }) {
+import LanguageSwitcher from "../LanguageSwitcher";
+function Design1({ menuData, currentLang, setCurrentLang }) {
   const [selectedItem, setSelectedItem] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -22,14 +22,20 @@ function Design1({ menuData, currentLang }) {
   return (
     <>
       <header className="restaurant-header">
-        <h1>{menuData[currentLang].restaurantName}</h1>
-        {menuData[currentLang].logo && (
-          <img
-            src={getImagePath(menuData[currentLang].logo)}
-            alt="Restaurant Logo"
-            className="restaurant-logo"
-          />
-        )}
+        <div className="restaurant-header-content">
+          {menuData[currentLang].logo && (
+            <img
+              src={getImagePath(menuData[currentLang].logo)}
+              alt="Restaurant Logo"
+              className="restaurant-logo"
+            />
+          )}
+          <h1>{menuData[currentLang].restaurantName}</h1>
+        </div>
+        <LanguageSwitcher
+          currentLang={currentLang}
+          setCurrentLang={setCurrentLang}
+        />
       </header>
 
       <div className="menu-container">

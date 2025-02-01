@@ -7,6 +7,7 @@
   color: var(--text-primary);
   line-height: 1.6;
   background-color: var(--background-main);
+  padding-top: 100px;
 }
 
 section {
@@ -17,21 +18,43 @@ section {
 
 /* Hero Section */
 .hero {
-  background: var(--background-gradient);
+  background: var(--eco-gradient);
   color: var(--text-white);
+  padding: 100px 20px;
   text-align: center;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   overflow: hidden;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../public/images/leaf-pattern.svg") repeat;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+/* Add a dark overlay for better text contrast */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
 .hero-content {
+  position: relative;
+  z-index: 2;
   max-width: 800px;
-  padding: 0 20px;
-  animation: fadeInUp 1s ease-out;
+  margin: 0 auto;
 }
 
 .hero h1 {
@@ -39,40 +62,77 @@ section {
   font-weight: 800;
   margin-bottom: 1.5rem;
   line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero .subtitle {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  opacity: 0.9;
+  opacity: 0.95;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .hero .description {
   font-size: 1.1rem;
-  margin-bottom: 2rem;
-  opacity: 0.8;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button {
   background: var(--primary-light);
   color: var(--text-white);
   border: none;
-  padding: 15px 40px;
-  font-size: 1.1rem;
+  padding: 18px 48px;
+  font-size: 1.2rem;
   border-radius: 30px;
   cursor: pointer;
-  transition: transform 0.2s, background 0.2s;
+  transition: all 0.3s ease;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 8px 30px rgba(46, 204, 113, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: 0.6s;
 }
 
 .cta-button:hover {
   background: var(--primary-dark);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25),
+    0 10px 40px rgba(46, 204, 113, 0.4);
+}
+
+.cta-button:hover::before {
+  transform: translateX(100%);
+}
+
+.cta-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(46, 204, 113, 0.3);
 }
 
 /* Features Section */
 .features {
-  background: var(--background-light);
+  background: var(--background-main);
+  padding: 80px 20px;
 }
 
 .features-grid {
@@ -83,22 +143,35 @@ section {
 }
 
 .feature-card {
-  background: var(--ui-cardBg);
+  background: var(--background-light);
+  border: 1px solid var(--ui-border);
+  border-radius: 15px;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px var(--ui-shadow);
-  transition: transform 0.3s ease;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.feature-card:hover {
-  transform: translateY(-5px);
-  background: var(--ui-hover);
+.feature-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--eco-gradient);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover::after {
+  transform: scaleX(1);
 }
 
 .feature-icon {
-  font-size: 2rem;
   color: var(--primary-main);
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
@@ -169,10 +242,22 @@ section {
 
 /* Call to Action Section */
 .cta-section {
-  background: var(--primary-main);
-  color: var(--text-white);
-  text-align: center;
-  padding: 60px 20px;
+  background: var(--background-main);
+  color: var(--text-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../public/images/leaf-pattern.svg") repeat;
+  opacity: 0.05;
+  z-index: 1;
 }
 
 .cta-section h2 {
@@ -198,9 +283,10 @@ section {
 }
 
 .primary-button {
-  background: var(--primary-light);
+  background: var(--primary-main);
   color: var(--text-white);
   border: none;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
 }
 
 .primary-button:hover {
@@ -210,8 +296,8 @@ section {
 
 .secondary-button {
   background: transparent;
-  color: var(--text-white);
-  border: 2px solid var(--text-white);
+  color: var(--primary-main);
+  border: 2px solid var(--primary-main);
 }
 
 .secondary-button:hover {
@@ -222,8 +308,18 @@ section {
 /* Footer */
 .footer {
   background: var(--secondary-main);
-  color: var(--text-white);
-  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--eco-gradient);
 }
 
 .footer-content {
@@ -312,4 +408,142 @@ section {
 /* Hide Loom companion div */
 .loom-companion-mv3 {
   display: none !important;
+}
+
+/* Environmental Section */
+.environmental {
+  background: var(--eco-gradient);
+  color: var(--text-white);
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.environmental h2 {
+  color: var(--text-white);
+}
+
+.environmental-subtitle {
+  color: var(--text-white);
+  opacity: 0.9;
+}
+
+.environmental-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 20px;
+}
+
+.benefit-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px var(--ui-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px var(--ui-shadow);
+}
+
+.benefit-icon {
+  color: var(--primary-main);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.benefit-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.certification-section {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px var(--ui-shadow);
+}
+
+.certification-section h3 {
+  font-size: 1.8rem;
+  color: var(--primary-main);
+  margin-bottom: 20px;
+}
+
+.certification-section p {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.eco-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background: var(--primary-dark);
+  color: var(--text-white);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+  border: 2px solid var(--text-white);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.eco-badge:hover {
+  transform: scale(1.05);
+}
+
+.badge-icon {
+  font-size: 1.4rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .environmental h2 {
+    font-size: 2rem;
+  }
+
+  .environmental-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .environmental-benefits {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .benefit-card {
+    padding: 20px;
+  }
+
+  .certification-section {
+    padding: 30px 20px;
+  }
+
+  .certification-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .eco-badge {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
 }

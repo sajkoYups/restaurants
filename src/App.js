@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   Navigate,
+  useLocation,
 } from "react-router-dom";
 import Header from "./components/Header";
 import LandingPage from "./components/LandingPage";
@@ -30,22 +31,16 @@ const designs = [
   { id: 3, name: "Elegant" },
 ];
 
-function App() {
-  const [currentLang, setCurrentLang] = useState("en");
-  const [currentDesign, setCurrentDesign] = useState(1);
-
-  const renderCurrentDesign = () => {
-    switch (currentDesign) {
-      case 1:
-        return <Design1 menuData={menuData} currentLang={currentLang} />;
-      case 2:
-        return <Design2 menuData={menuData} currentLang={currentLang} />;
-      case 3:
-        return <Design3 menuData={menuData} currentLang={currentLang} />;
-      default:
-        return <Design1 menuData={menuData} currentLang={currentLang} />;
-    }
-  };
+// Wrapper component to handle conditional header rendering
+const AppContent = ({
+  currentLang,
+  setCurrentLang,
+  renderCurrentDesign,
+  setCurrentDesign,
+  currentDesign,
+}) => {
+  const location = useLocation();
+  const showHeader = location.pathname !== "/menu";
 
   const MenuPage = () => (
     <div className="menu-page">
@@ -64,10 +59,10 @@ function App() {
           ))}
         </div>
 
-        <LanguageSwitcher
+        {/* <LanguageSwitcher
           currentLang={currentLang}
           setCurrentLang={setCurrentLang}
-        />
+        /> */}
       </div>
 
       {renderCurrentDesign()}
@@ -75,15 +70,69 @@ function App() {
   );
 
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      {showHeader && (
         <Header currentLang={currentLang} onLanguageChange={setCurrentLang} />
-        <Routes>
-          <Route path="/" element={<LandingPage currentLang={currentLang} />} />
-          <Route path="/menu" element={<MenuPage />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-      </div>
+      )}
+      <Routes>
+        <Route path="/" element={<LandingPage currentLang={currentLang} />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </div>
+  );
+};
+
+function App() {
+  const [currentLang, setCurrentLang] = useState("en");
+  const [currentDesign, setCurrentDesign] = useState(1);
+
+  const renderCurrentDesign = () => {
+    switch (currentDesign) {
+      case 1:
+        return (
+          <Design1
+            menuData={menuData}
+            currentLang={currentLang}
+            setCurrentLang={setCurrentLang}
+          />
+        );
+      case 2:
+        return (
+          <Design2
+            menuData={menuData}
+            currentLang={currentLang}
+            setCurrentLang={setCurrentLang}
+          />
+        );
+      case 3:
+        return (
+          <Design3
+            menuData={menuData}
+            currentLang={currentLang}
+            setCurrentLang={setCurrentLang}
+          />
+        );
+      default:
+        return (
+          <Design1
+            menuData={menuData}
+            currentLang={currentLang}
+            setCurrentLang={setCurrentLang}
+          />
+        );
+    }
+  };
+
+  return (
+    <Router>
+      <AppContent
+        currentLang={currentLang}
+        setCurrentLang={setCurrentLang}
+        currentDesign={currentDesign}
+        setCurrentDesign={setCurrentDesign}
+        renderCurrentDesign={renderCurrentDesign}
+      />
     </Router>
   );
 }
