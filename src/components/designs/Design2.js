@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import "../../styles/Design2.css";
 import FoodModal from "../FoodModal";
 import AllergenIcons from "../AllergenIcons";
-
-function Design2({ menuData, currentLang }) {
+import LanguageSwitcher from "../LanguageSwitcher";
+function Design2({ menuData, currentLang, setCurrentLang }) {
   const [activeCategory, setActiveCategory] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -31,19 +31,36 @@ function Design2({ menuData, currentLang }) {
   return (
     <div className="design2-container">
       {/* Hamburger Menu Button (Mobile Only) */}
-      <button
-        className="hamburger-button"
-        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div className="restaurant-header-container-design2">
+        <button
+          className="hamburger-button"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <header className="restaurant-header-design2">
+          <div className="restaurant-header-content-design2">
+            {/* {menuData[currentLang].logo && (
+              <img
+                src={getImagePath(menuData[currentLang].logo)}
+                alt="Restaurant Logo"
+                className="restaurant-logo"
+              />
+            )} */}
+            <h1>{menuData[currentLang].restaurantName}</h1>
+          </div>
+          <LanguageSwitcher
+            currentLang={currentLang}
+            setCurrentLang={setCurrentLang}
+          />
+        </header>
+      </div>
 
       {/* Sidebar Navigation */}
       <nav className={`sidebar ${isMobileMenuOpen ? "open" : ""}`}>
         <div className="sidebar-header">
-          <h1>{menuData[currentLang].restaurantName}</h1>
           {menuData[currentLang].logo && (
             <img
               src={getImagePath(menuData[currentLang].logo)}
@@ -51,6 +68,7 @@ function Design2({ menuData, currentLang }) {
               className="sidebar-logo"
             />
           )}
+          <h1>{menuData[currentLang].restaurantName}</h1>
         </div>
 
         <ul className="category-nav">
@@ -70,6 +88,12 @@ function Design2({ menuData, currentLang }) {
             </li>
           ))}
         </ul>
+        <div className="language-switcher-container-design2">
+          <LanguageSwitcher
+            currentLang={currentLang}
+            setCurrentLang={setCurrentLang}
+          />
+        </div>
       </nav>
 
       {/* Main Content Area */}

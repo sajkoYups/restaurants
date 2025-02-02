@@ -16,7 +16,6 @@ import menuSpanish from "./data/menu-es.json";
 import Design1 from "./components/designs/Design1";
 import Design2 from "./components/designs/Design2";
 import Design3 from "./components/designs/Design3";
-import LanguageSwitcher from "./components/LanguageSwitcher";
 
 const menuData = {
   en: menuEnglish,
