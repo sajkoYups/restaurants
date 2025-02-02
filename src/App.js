@@ -16,6 +16,8 @@ import menuSpanish from "./data/menu-es.json";
 import Design1 from "./components/designs/Design1";
 import Design2 from "./components/designs/Design2";
 import Design3 from "./components/designs/Design3";
+import Design4 from "./components/designs/Design4";
+import Design5 from "./components/designs/Design5";
 
 const menuData = {
   en: menuEnglish,
@@ -28,6 +30,8 @@ const designs = [
   { id: 1, name: "Classic" },
   { id: 2, name: "Minimal" },
   { id: 3, name: "Elegant" },
+  { id: 4, name: "Newspaper" },
+  { id: 5, name: "Modern" },
 ];
 
 // Wrapper component to handle conditional header rendering
@@ -107,6 +111,22 @@ function App() {
       case 3:
         return (
           <Design3
+            menuData={menuData}
+            currentLang={currentLang}
+            setCurrentLang={setCurrentLang}
+          />
+        );
+      case 4:
+        return (
+          <Design4
+            menuData={menuData}
+            currentLang={currentLang}
+            setCurrentLang={setCurrentLang}
+          />
+        );
+      case 5:
+        return (
+          <Design5
             menuData={menuData}
             currentLang={currentLang}
             setCurrentLang={setCurrentLang}

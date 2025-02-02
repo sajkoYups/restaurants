@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+Pro:wght@400;600&display=swap");
+
+.design4-container {
+  background: #f8f5f0;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: "Source Serif Pro", serif;
+}
+
+/* Header Styles */
+.newspaper-header {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  text-align: center;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.restaurant-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c1810;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.decorative-border {
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    #2c1810,
+    #2c1810 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  margin-top: 20px;
+}
+
+/* Menu Layout */
+.newspaper-menu {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-columns {
+  column-count: 2;
+  column-gap: 40px;
+  orphans: 1;
+  widows: 1;
+}
+
+/* Category Styles */
+.menu-category-newspaper {
+  break-inside: avoid;
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #e0d5c1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.category-header-newspaper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  color: #2c1810;
+}
+
+.category-header-newspaper h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #2c1810;
+  margin: 0;
+  font-weight: 600;
+}
+
+.header-line {
+  flex: 1;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    #2c1810,
+    #2c1810 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  margin-left: 15px;
+}
+
+/* Menu Item Styles */
+.menu-item-newspaper {
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.menu-item-newspaper:hover {
+  background: rgba(44, 24, 16, 0.03);
+}
+
+.item-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.item-header h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: #2c1810;
+  margin: 0;
+  font-weight: 600;
+}
+
+.price-line {
+  flex: 1;
+  height: 1px;
+  border-bottom: 1px dotted #2c1810;
+  margin: 0 10px;
+}
+
+.item-price {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #2c1810;
+  white-space: nowrap;
+}
+
+.item-description {
+  font-size: 0.95rem;
+  color: #5c4030;
+  line-height: 1.5;
+  margin: 0 0 8px 0;
+}
+
+.item-allergens {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .menu-columns {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-columns {
+    column-count: 1;
+  }
+
+  .restaurant-title {
+    font-size: 2rem;
+  }
+
+  .category-header-newspaper h2 {
+    font-size: 1.5rem;
+  }
+
+  .menu-category-newspaper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .design4-container {
+    padding: 20px 15px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .restaurant-title {
+    font-size: 1.8rem;
+  }
+
+  .menu-category-newspaper {
+    padding: 15px;
+  }
+
+  .category-header-newspaper h2 {
+    font-size: 1.3rem;
+  }
+
+  .item-header h3 {
+    font-size: 1.1rem;
+  }
+}

@@ -66,6 +66,7 @@ body {
   padding: 10px;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  overflow-x: auto;
 }
 
 /* Navigation Elements */
