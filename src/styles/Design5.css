@@ -248,3 +248,34 @@
     gap: 15px;
   }
 }
+
+.header-controls-modern {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+/* Eco-friendly button styles for modern theme */
+.modern-header .eco-friendly-button {
+  background: none;
+  border: 2px solid green;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.modern-header .eco-friendly-button:hover {
+  background: green;
+  transform: translateY(-2px);
+}
+
+.modern-header .eco-friendly-button .eco-leaf {
+  color: #fff;
+}
+
+.modern-header .eco-friendly-button .eco-ribbon {
+  color: rgba(255, 255, 255, 0.8);
+}

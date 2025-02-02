@@ -3,6 +3,7 @@ import "../../styles/Design5.css";
 import FoodModal from "../FoodModal";
 import AllergenIcons from "../AllergenIcons";
 import LanguageSwitcher from "../LanguageSwitcher";
+import EcoFriendly from "../EcoFriendly";
 import {
   FaWineGlass,
   FaCoffee,
@@ -48,10 +49,13 @@ function Design5({ menuData, currentLang, setCurrentLang }) {
       <header className="modern-header">
         <div className="header-content-modern">
           <h1>{menuData[currentLang].restaurantName}</h1>
-          <LanguageSwitcher
-            currentLang={currentLang}
-            setCurrentLang={setCurrentLang}
-          />
+          <div className="header-controls-modern">
+            <EcoFriendly />
+            <LanguageSwitcher
+              currentLang={currentLang}
+              setCurrentLang={setCurrentLang}
+            />
+          </div>
         </div>
       </header>
 

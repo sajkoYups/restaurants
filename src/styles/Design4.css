@@ -72,7 +72,11 @@
   align-items: center;
   gap: 15px;
   margin-bottom: 25px;
-  position: relative;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  background-color: #ffffff;
+  width: 100%;
 }
 
 .category-icon {
@@ -195,7 +199,6 @@
   }
 
   .header-content-newspaper {
-    gap: 20px;
     align-items: center;
     justify-content: space-between;
   }
@@ -215,4 +218,39 @@
   .item-header h3 {
     font-size: 1.1rem;
   }
+}
+
+.header-controls-newspaper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+/* Eco-friendly button styles for newspaper theme */
+.newspaper-header .eco-friendly-button {
+  background: none;
+  border: 2px solid green;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.newspaper-header .eco-friendly-button:hover {
+  background-color: green;
+}
+
+.newspaper-header .eco-friendly-button .eco-leaf {
+  color: green;
+}
+
+.newspaper-header .eco-friendly-button .eco-ribbon {
+  color: green;
+}
+
+.newspaper-header .eco-friendly-button:hover .eco-leaf,
+.newspaper-header .eco-friendly-button:hover .eco-ribbon {
+  color: #fff;
 }

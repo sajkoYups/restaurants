@@ -3,6 +3,7 @@ import "../../styles/Design4.css";
 import FoodModal from "../FoodModal";
 import AllergenIcons from "../AllergenIcons";
 import LanguageSwitcher from "../LanguageSwitcher";
+import EcoFriendly from "../EcoFriendly";
 import {
   FaWineGlass,
   FaCoffee,
@@ -50,10 +51,13 @@ function Design4({ menuData, currentLang, setCurrentLang }) {
           <h1 className="restaurant-title">
             {menuData[currentLang].restaurantName}
           </h1>
-          <LanguageSwitcher
-            currentLang={currentLang}
-            setCurrentLang={setCurrentLang}
-          />
+          <div className="header-controls-newspaper">
+            <EcoFriendly />
+            <LanguageSwitcher
+              currentLang={currentLang}
+              setCurrentLang={setCurrentLang}
+            />
+          </div>
         </div>
         <div className="decorative-border"></div>
       </header>
