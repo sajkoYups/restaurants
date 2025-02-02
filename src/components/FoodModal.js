@@ -1,7 +1,7 @@
 import React from "react";
 import "./FoodModal.css";
 
-const FoodModal = ({ isOpen, onClose, food }) => {
+const FoodModal = ({ isOpen, onClose, food, hideImages = false }) => {
   if (!isOpen || !food) return null;
 
   const {
@@ -25,14 +25,17 @@ const FoodModal = ({ isOpen, onClose, food }) => {
   };
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
+    <div
+      className={`modal-overlay ${hideImages ? "no-image" : ""}`}
+      onClick={onClose}
+    >
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>
           &times;
         </button>
 
         <div className="modal-header">
-          {image && (
+          {!hideImages && image && (
             <div className="modal-image-container">
               <img
                 src={getImagePath(image)}

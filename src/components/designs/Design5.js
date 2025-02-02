@@ -46,7 +46,7 @@ function Design5({ menuData, currentLang, setCurrentLang }) {
   return (
     <div className="design5-container">
       <header className="modern-header">
-        <div className="header-content">
+        <div className="header-content-modern">
           <h1>{menuData[currentLang].restaurantName}</h1>
           <LanguageSwitcher
             currentLang={currentLang}
@@ -65,7 +65,7 @@ function Design5({ menuData, currentLang, setCurrentLang }) {
                 <h2>{category.name}</h2>
               </div>
 
-              <div className="menu-items">
+              <div className="menu-items-modern">
                 {category.items.map((item) => (
                   <div
                     key={item.id}
@@ -106,6 +106,7 @@ function Design5({ menuData, currentLang, setCurrentLang }) {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         food={selectedItem}
+        hideImages={true}
       />
     </div>
   );

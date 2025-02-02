@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.header-content {
+.header-content-newspaper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -172,6 +172,14 @@
     font-size: 2rem;
   }
 
+  .category-header-newspaper {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: #ffffff;
+    width: 100%;
+  }
+
   .category-header-newspaper h2 {
     font-size: 1.5rem;
   }
@@ -186,9 +194,10 @@
     padding: 20px 15px;
   }
 
-  .header-content {
-    flex-direction: column;
+  .header-content-newspaper {
     gap: 20px;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .restaurant-title {

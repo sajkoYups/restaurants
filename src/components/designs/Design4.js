@@ -46,7 +46,7 @@ function Design4({ menuData, currentLang, setCurrentLang }) {
   return (
     <div className="design4-container">
       <header className="newspaper-header">
-        <div className="header-content">
+        <div className="header-content-newspaper">
           <h1 className="restaurant-title">
             {menuData[currentLang].restaurantName}
           </h1>
@@ -105,6 +105,7 @@ function Design4({ menuData, currentLang, setCurrentLang }) {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         food={selectedItem}
+        hideImages={true}
       />
     </div>
   );
