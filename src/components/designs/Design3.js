@@ -2,8 +2,9 @@ import { useState } from "react";
 import "../../styles/Design3.css";
 import FoodModal from "../FoodModal";
 import AllergenIcons from "../AllergenIcons";
+import LanguageSwitcher from "../LanguageSwitcher";
 
-function Design3({ menuData, currentLang }) {
+function Design3({ menuData, currentLang, setCurrentLang }) {
   const [selectedItem, setSelectedItem] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -22,8 +23,7 @@ function Design3({ menuData, currentLang }) {
   return (
     <div className="design3-container">
       <header className="elegant-header">
-        <div className="header-content">
-          <h1>{menuData[currentLang].restaurantName}</h1>
+        <div className="header-content-elegant">
           {menuData[currentLang].logo && (
             <img
               src={getImagePath(menuData[currentLang].logo)}
@@ -31,7 +31,12 @@ function Design3({ menuData, currentLang }) {
               className="elegant-logo"
             />
           )}
+          <h1>{menuData[currentLang].restaurantName}</h1>
         </div>
+        <LanguageSwitcher
+          currentLang={currentLang}
+          setCurrentLang={setCurrentLang}
+        />
       </header>
 
       <div className="elegant-menu">
