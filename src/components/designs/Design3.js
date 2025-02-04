@@ -77,13 +77,18 @@ function Design3({ menuData, currentLang, setCurrentLang }) {
                       </span>
                     </div>
                     <p className="elegant-description">{item.description}</p>
-                    {item.allergens && (
-                      <div className="elegant-footer">
-                        <div className="elegant-allergens">
-                          <AllergenIcons allergens={item.allergens} />
-                        </div>
+                    <div className="item-allergens-read-more-container-elegant">
+                      <div className="item-allergens-read-more-button-elegant">
+                        Read more
                       </div>
-                    )}
+                      {item.allergens && (
+                        <div className="elegant-footer">
+                          <div className="elegant-allergens">
+                            <AllergenIcons allergens={item.allergens} />
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}

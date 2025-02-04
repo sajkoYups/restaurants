@@ -49,7 +49,7 @@ function Design5({ menuData, currentLang, setCurrentLang }) {
       <header className="modern-header">
         <div className="header-content-modern">
           <h1>{menuData[currentLang].restaurantName}</h1>
-          <div className="header-controls-modern">
+          <div className="header-controls">
             <EcoFriendly />
             <LanguageSwitcher
               currentLang={currentLang}

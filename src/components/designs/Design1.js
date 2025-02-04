@@ -3,6 +3,8 @@ import "../../styles/Design1.css";
 import FoodModal from "../FoodModal";
 import AllergenIcons from "../AllergenIcons";
 import LanguageSwitcher from "../LanguageSwitcher";
+import EcoFriendly from "../EcoFriendly";
+
 function Design1({ menuData, currentLang, setCurrentLang }) {
   const [selectedItem, setSelectedItem] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,10 +34,13 @@ function Design1({ menuData, currentLang, setCurrentLang }) {
           )}
           <h1>{menuData[currentLang].restaurantName}</h1>
         </div>
-        <LanguageSwitcher
-          currentLang={currentLang}
-          setCurrentLang={setCurrentLang}
-        />
+        <div className="header-controls">
+          <EcoFriendly />
+          <LanguageSwitcher
+            currentLang={currentLang}
+            setCurrentLang={setCurrentLang}
+          />
+        </div>
       </header>
 
       <div className="menu-container">
@@ -66,11 +71,16 @@ function Design1({ menuData, currentLang, setCurrentLang }) {
                           currency: "EUR",
                         }).format(item.price)}
                       </p>
-                      {item.allergens && (
-                        <div className="item-allergens">
-                          <AllergenIcons allergens={item.allergens} />
+                      <div className="item-allergens-read-more-container">
+                        <div className="item-allergens-read-more-button">
+                          👆 Read more
                         </div>
-                      )}
+                        {item.allergens && (
+                          <div className="item-allergens">
+                            <AllergenIcons allergens={item.allergens} />
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>

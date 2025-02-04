@@ -51,7 +51,7 @@ function Design4({ menuData, currentLang, setCurrentLang }) {
           <h1 className="restaurant-title">
             {menuData[currentLang].restaurantName}
           </h1>
-          <div className="header-controls-newspaper">
+          <div className="header-controls">
             <EcoFriendly />
             <LanguageSwitcher
               currentLang={currentLang}

@@ -5,7 +5,7 @@ const FoodModal = ({ isOpen, onClose, food, hideImages = false }) => {
   if (!isOpen || !food) return null;
 
   const {
-    title,
+    name,
     description,
     image,
     detailedDescription,
@@ -23,7 +23,7 @@ const FoodModal = ({ isOpen, onClose, food, hideImages = false }) => {
     }
     return `${process.env.PUBLIC_URL}/${imagePath}`;
   };
-
+  console.log("food", food);
   return (
     <div
       className={`modal-overlay ${hideImages ? "no-image" : ""}`}
@@ -39,12 +39,12 @@ const FoodModal = ({ isOpen, onClose, food, hideImages = false }) => {
             <div className="modal-image-container">
               <img
                 src={getImagePath(image)}
-                alt={title}
+                alt={name}
                 className="modal-image"
               />
             </div>
           )}
-          <h2 className="modal-title">{title}</h2>
+          <h2 className="modal-title">{name}</h2>
         </div>
 
         <div className="modal-body">

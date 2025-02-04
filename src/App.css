@@ -61,12 +61,11 @@ body {
 .menu-controls {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px;
   margin-bottom: 20px;
   flex-wrap: wrap;
-  overflow-x: auto;
 }
 
 /* Navigation Elements */
@@ -78,6 +77,7 @@ body {
   padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px var(--ui-shadow);
+  overflow-x: auto;
 }
 
 .design-btn {

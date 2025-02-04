@@ -42,13 +42,6 @@ function Design2({ menuData, currentLang, setCurrentLang }) {
         </button>
         <header className="restaurant-header-design2">
           <div className="restaurant-header-content-design2">
-            {/* {menuData[currentLang].logo && (
-              <img
-                src={getImagePath(menuData[currentLang].logo)}
-                alt="Restaurant Logo"
-                className="restaurant-logo"
-              />
-            )} */}
             <h1>{menuData[currentLang].restaurantName}</h1>
           </div>
           <LanguageSwitcher
@@ -125,11 +118,16 @@ function Design2({ menuData, currentLang, setCurrentLang }) {
                             currency: "EUR",
                           }).format(item.price)}
                         </p>
-                        {item.allergens && (
-                          <div className="item-allergens">
-                            <AllergenIcons allergens={item.allergens} />
+                        <div className="item-allergens-read-more-container">
+                          <div className="item-allergens-read-more-button">
+                            👆 Read more
                           </div>
-                        )}
+                          {item.allergens && (
+                            <div className="item-allergens">
+                              <AllergenIcons allergens={item.allergens} />
+                            </div>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>

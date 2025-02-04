@@ -121,15 +121,17 @@
 }
 
 .eco-description {
-  text-align: center;
+  text-align: left;
   color: #666;
   line-height: 1.6;
   margin-bottom: 30px;
+  padding-left: 20px;
 }
 
 .eco-practices {
   display: grid;
   gap: 20px;
+  text-align: left;
 }
 
 .eco-practice {
@@ -184,6 +186,10 @@
 
   .eco-modal-header h2 {
     font-size: 1.3rem;
+  }
+
+  .eco-description {
+    padding-left: 15px;
   }
 
   .eco-practices {
